@@ -4,12 +4,13 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import normalize
 import openai
-import aioredis
 import os
-from dotenv import load_dotenv
 import re
+from pymongo import MongoClient
+from bson.objectid import ObjectId
 
-load_dotenv()
+from storage.db import VectorDatabase
+
 
 class EventMatcher:
     def __init__(self):
@@ -21,11 +22,11 @@ class EventMatcher:
         }
         self.embeddings = {}
         self.data = {}
-        self.redis_client = None
-
-    async def initialize_redis(self):
-        print("Initializing Redis client")
-        self.redis_client = await aioredis.from_url("redis://localhost", encoding="utf-8", decode_responses=True)
+        
+        # Initialize MongoDB VectorDatabase
+        uri = "mongodb+srv://guavadb.oingz.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority&appName=guavadb"
+        cert_file = 'storage/certificates/X509-cert-3512411630284717239.pem'
+        self.vector_db = VectorDatabase(uri, cert_file)
 
     def load_json(self, file_path):
         with open(file_path, 'r', encoding='utf-8') as file:
@@ -40,31 +41,22 @@ class EventMatcher:
         embeddings = []
         descriptions = [self.sanitize_sentence(item['headline']) for item in data]
         market_ids = [item['market_id'] for item in data]
-        cache_keys = [f"{source_name}:embedding:{market_id}" for market_id in market_ids]
-        cached_embeddings = await self.redis_client.mget(*cache_keys)
 
-        to_fetch = [i for i, emb in enumerate(cached_embeddings) if emb is None]
-        fetched_embeddings = []
-
-        for i in range(0, len(to_fetch), batch_size):
-            print(f"Generating embeddings for {source_name} - {i + 1}/{len(to_fetch)}")
-            batch_indices = to_fetch[i:i + batch_size]
-            batch_texts = [descriptions[index] for index in batch_indices]
+        for i in range(0, len(descriptions), batch_size):
+            print(f"Generating embeddings for {source_name} - {i + 1}/{len(descriptions)}")
+            batch_texts = descriptions[i:i + batch_size]
             response = openai.embeddings.create(model="text-embedding-3-large", input=batch_texts)
             batch_embeddings = [result.embedding for result in response.data]
-            fetched_embeddings.extend(batch_embeddings)
+            embeddings.extend(batch_embeddings)
 
-            cache_dict = {cache_keys[index]: json.dumps(batch_embeddings[j]) for j, index in enumerate(batch_indices)}
-            await self.redis_client.mset(cache_dict)
+            # Store each embedding in MongoDB
+            for index, market_id in enumerate(market_ids[i:i + batch_size]):
+                self.vector_db.add_document(market_id, batch_embeddings[index])
 
-        for index, emb in zip(to_fetch, fetched_embeddings):
-            cached_embeddings[index] = json.dumps(emb)
-
-        self.embeddings[source_name] = np.array([json.loads(emb) for emb in cached_embeddings if isinstance(emb, str)])
+        self.embeddings[source_name] = np.array(embeddings)
 
     async def match_events(self):
         print("Matching events")
-        await self.initialize_redis()
         for source_name, file_path in self.data_sources.items():
             data = self.load_json(file_path)
             await self.generate_embeddings(source_name, data)

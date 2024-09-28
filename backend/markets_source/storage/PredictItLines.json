@@ -73,7 +73,7 @@
         "description": "Harris the 47th US president?",
         "end_date": "NA",
         "yes_ask": 0.57,
-        "no_ask": 0.45,
+        "no_ask": 0.44,
         "liquidity": null
     },
     {
@@ -259,7 +259,7 @@
         "headline": "Which party will win the 2024 US Senate election in Ohio? - Democratic",
         "description": "Democractic",
         "end_date": "NA",
-        "yes_ask": 0.49,
+        "yes_ask": 0.5,
         "no_ask": 0.52,
         "liquidity": null
     },

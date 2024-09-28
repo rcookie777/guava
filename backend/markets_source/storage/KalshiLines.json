@@ -326,8 +326,8 @@
         "description": "If an announcement indicates that a manned NASA mission landed on the Moon after Issuance and by December 31, 2025, then the market resolves to Yes.",
         "end_date": "2026-01-01T04:59:00Z",
         "yes_ask": 0.18,
-        "no_ask": 0.88,
-        "liquidity": 285288
+        "no_ask": 0.87,
+        "liquidity": 285321
     },
     {
         "source": "Kalshi",
@@ -338,7 +338,7 @@
         "end_date": "2027-12-31T15:00:00Z",
         "yes_ask": 0.55,
         "no_ask": 0.49,
-        "liquidity": 1520064
+        "liquidity": 1520614
     },
     {
         "source": "Kalshi",
@@ -370,8 +370,8 @@
         "description": "If United Kingdom has two consecutive quarters of negative real GDP growth before Dec 31, 2026, then the market resolves to Yes.",
         "end_date": "2027-12-31T15:00:00Z",
         "yes_ask": 0.53,
-        "no_ask": 0.5900000000000001,
-        "liquidity": 504579
+        "no_ask": 0.5800000000000001,
+        "liquidity": 505434
     },
     {
         "source": "Kalshi",
@@ -611,9 +611,9 @@
         "headline": "GTA 6 release date? Before 2026",
         "description": "If GTA 6 has been released on a major platform (PS5, Xbox Series X/S, Windows) by Dec 31, 2025, then the market resolves to Yes.",
         "end_date": "2026-01-01T04:59:00Z",
-        "yes_ask": 0.6,
-        "no_ask": 0.45999999999999996,
-        "liquidity": 316108
+        "yes_ask": 0.59,
+        "no_ask": 0.48,
+        "liquidity": 315329
     },
     {
         "source": "Kalshi",
@@ -623,8 +623,8 @@
         "description": "If GTA 6 has been released on a major platform (PS5, Xbox Series X/S, Windows) by Jun 30, 2025, then the market resolves to Yes.",
         "end_date": "2025-07-01T03:59:00Z",
         "yes_ask": 0.05,
-        "no_ask": 0.96,
-        "liquidity": 561711
+        "no_ask": 0.97,
+        "liquidity": 576609
     },
     {
         "source": "Kalshi",
@@ -668,7 +668,7 @@
         "end_date": "2026-01-01T04:59:00Z",
         "yes_ask": 0.15,
         "no_ask": 0.89,
-        "liquidity": 1447767
+        "liquidity": 1447587
     },
     {
         "source": "Kalshi",
@@ -679,7 +679,7 @@
         "end_date": "2026-01-01T15:00:00Z",
         "yes_ask": 0.04,
         "no_ask": 1.0,
-        "liquidity": 1240950
+        "liquidity": 1027766
     },
     {
         "source": "Kalshi",
@@ -855,7 +855,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.02,
         "no_ask": 0.99,
-        "liquidity": 276115
+        "liquidity": 276175
     },
     {
         "source": "Kalshi",
@@ -877,7 +877,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.02,
         "no_ask": 1.0,
-        "liquidity": 252060
+        "liquidity": 252200
     },
     {
         "source": "Kalshi",
@@ -888,7 +888,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.11,
         "no_ask": 0.9,
-        "liquidity": 527960
+        "liquidity": 526970
     },
     {
         "source": "Kalshi",
@@ -908,9 +908,9 @@
         "headline": "Oscar nominations for Best Picture? Kinds of Kindness",
         "description": "If Kinds of Kindness has been nominated for Best Picture at the 97th Academy Awards, then the market resolves to Yes.",
         "end_date": "2025-12-31T15:00:00Z",
-        "yes_ask": 0.06,
+        "yes_ask": 0.05,
         "no_ask": 0.97,
-        "liquidity": 411060
+        "liquidity": 411185
     },
     {
         "source": "Kalshi",
@@ -921,7 +921,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.05,
         "no_ask": 0.97,
-        "liquidity": 410925
+        "liquidity": 413350
     },
     {
         "source": "Kalshi",
@@ -930,9 +930,9 @@
         "headline": "Oscar nominations for Best Picture? We Live In Time",
         "description": "If We Live In Time has been nominated for Best Picture at the 97th Academy Awards, then the market resolves to Yes.",
         "end_date": "2025-12-31T15:00:00Z",
-        "yes_ask": 0.12,
+        "yes_ask": 0.11,
         "no_ask": 0.92,
-        "liquidity": 435632
+        "liquidity": 434550
     },
     {
         "source": "Kalshi",
@@ -963,9 +963,9 @@
         "headline": "Oscar nominations for Best Picture? Megalopolis",
         "description": "If Megalopolis has been nominated for Best Picture at the 97th Academy Awards, then the market resolves to Yes.",
         "end_date": "2025-12-31T15:00:00Z",
-        "yes_ask": 0.1,
-        "no_ask": 0.91,
-        "liquidity": 636621
+        "yes_ask": 0.09,
+        "no_ask": 0.92,
+        "liquidity": 364303
     },
     {
         "source": "Kalshi",
@@ -974,9 +974,9 @@
         "headline": "Oscar nominations for Best Picture? Joker: Folie à Deux",
         "description": "If Joker: Folie à Deux has been nominated for Best Picture at the 97th Academy Awards, then the market resolves to Yes.",
         "end_date": "2025-12-31T15:00:00Z",
-        "yes_ask": 0.12,
+        "yes_ask": 0.11,
         "no_ask": 0.92,
-        "liquidity": 475060
+        "liquidity": 474660
     },
     {
         "source": "Kalshi",
@@ -1007,9 +1007,9 @@
         "headline": "Oscar nominations for Best Picture? Dune: Part Two",
         "description": "If Dune: Part Two has been nominated for Best Picture at the 97th Academy Awards, then the market resolves to Yes.",
         "end_date": "2025-12-31T15:00:00Z",
-        "yes_ask": 0.94,
+        "yes_ask": 0.95,
         "no_ask": 0.07999999999999996,
-        "liquidity": 631054
+        "liquidity": 629071
     },
     {
         "source": "Kalshi",
@@ -1075,7 +1075,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.62,
         "no_ask": 0.43000000000000005,
-        "liquidity": 490543
+        "liquidity": 493271
     },
     {
         "source": "Kalshi",
@@ -1943,8 +1943,8 @@
         "description": "If Bill Belichick is announced to be the head coach for any team before May 1, 2025, then the market resolves to Yes.",
         "end_date": "2025-05-01T14:00:00Z",
         "yes_ask": 0.44,
-        "no_ask": 0.5800000000000001,
-        "liquidity": 242651
+        "no_ask": 0.64,
+        "liquidity": 213563
     },
     {
         "source": "Kalshi",
@@ -2109,7 +2109,7 @@
         "end_date": "2025-03-19T17:55:00Z",
         "yes_ask": 0.25,
         "no_ask": 1.0,
-        "liquidity": 653030
+        "liquidity": 652945
     },
     {
         "source": "Kalshi",
@@ -2120,7 +2120,7 @@
         "end_date": "2025-03-19T17:55:00Z",
         "yes_ask": 0.94,
         "no_ask": 1.0,
-        "liquidity": 405108
+        "liquidity": 405198
     },
     {
         "source": "Kalshi",
@@ -2129,9 +2129,9 @@
         "headline": "Fed funds rate in Mar 2025? 4.00%",
         "description": "If the upper bound of the target federal funds rate published on the Federal Reserve's official website is greater than 4.00% following the Federal Reserve's Mar 19, 2025 meeting, then the market resolves to Yes.",
         "end_date": "2025-03-19T17:55:00Z",
-        "yes_ask": 0.99,
+        "yes_ask": 1.0,
         "no_ask": 0.8,
-        "liquidity": 117305
+        "liquidity": 117091
     },
     {
         "source": "Kalshi",
@@ -2140,9 +2140,9 @@
         "headline": "Fed funds rate in Mar 2025? 3.75%",
         "description": "If the upper bound of the target federal funds rate published on the Federal Reserve's official website is greater than 3.75% following the Federal Reserve's Mar 19, 2025 meeting, then the market resolves to Yes.",
         "end_date": "2025-03-19T17:55:00Z",
-        "yes_ask": 0.99,
-        "no_ask": 1.0,
-        "liquidity": 198
+        "yes_ask": 1.0,
+        "no_ask": 0.99,
+        "liquidity": 4950
     },
     {
         "source": "Kalshi",
@@ -2405,8 +2405,8 @@
         "description": "If there are two consecutive quarters of negative GDP growth in 2023 or 2024, according to the Bureau of Economic Analysis, then the market resolves to Yes.",
         "end_date": "2025-01-31T13:25:00Z",
         "yes_ask": 0.05,
-        "no_ask": 0.96,
-        "liquidity": 4854320
+        "no_ask": 0.97,
+        "liquidity": 4867618
     },
     {
         "source": "Kalshi",
@@ -2428,7 +2428,7 @@
         "end_date": "2025-01-29T18:55:00Z",
         "yes_ask": 0.17,
         "no_ask": 1.0,
-        "liquidity": 933300
+        "liquidity": 933194
     },
     {
         "source": "Kalshi",
@@ -2439,7 +2439,7 @@
         "end_date": "2025-01-29T18:55:00Z",
         "yes_ask": 0.13,
         "no_ask": 1.0,
-        "liquidity": 1030062
+        "liquidity": 1029954
     },
     {
         "source": "Kalshi",
@@ -2450,7 +2450,7 @@
         "end_date": "2025-01-29T18:55:00Z",
         "yes_ask": 0.11,
         "no_ask": 0.99,
-        "liquidity": 1348233
+        "liquidity": 1348055
     },
     {
         "source": "Kalshi",
@@ -2461,7 +2461,7 @@
         "end_date": "2025-01-29T18:55:00Z",
         "yes_ask": 0.14,
         "no_ask": 0.99,
-        "liquidity": 1103165
+        "liquidity": 1102995
     },
     {
         "source": "Kalshi",
@@ -2472,7 +2472,7 @@
         "end_date": "2025-01-29T18:55:00Z",
         "yes_ask": 0.35,
         "no_ask": 0.99,
-        "liquidity": 1580920
+        "liquidity": 1580763
     },
     {
         "source": "Kalshi",
@@ -2483,7 +2483,7 @@
         "end_date": "2025-01-29T18:55:00Z",
         "yes_ask": 0.78,
         "no_ask": 0.99,
-        "liquidity": 917931
+        "liquidity": 919136
     },
     {
         "source": "Kalshi",
@@ -2494,7 +2494,7 @@
         "end_date": "2025-01-29T18:55:00Z",
         "yes_ask": 0.69,
         "no_ask": 0.9299999999999999,
-        "liquidity": 935857
+        "liquidity": 935758
     },
     {
         "source": "Kalshi",
@@ -2505,7 +2505,7 @@
         "end_date": "2025-01-29T18:55:00Z",
         "yes_ask": 0.98,
         "no_ask": 0.65,
-        "liquidity": 5900579
+        "liquidity": 5900461
     },
     {
         "source": "Kalshi",
@@ -2516,7 +2516,7 @@
         "end_date": "2025-01-29T18:55:00Z",
         "yes_ask": 0.99,
         "no_ask": 0.65,
-        "liquidity": 11108969
+        "liquidity": 11108842
     },
     {
         "source": "Kalshi",
@@ -2527,7 +2527,7 @@
         "end_date": "2025-01-29T18:55:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.35,
-        "liquidity": 542018
+        "liquidity": 541938
     },
     {
         "source": "Kalshi",
@@ -2768,8 +2768,8 @@
         "description": "If the 12-month percent change in the Consumer Price Index for All Urban Consumers: All Items less food and energy is between 2.5 in 2024 according to the Bureau of Labor Statistics, then the market resolves to Yes.",
         "end_date": "2025-01-13T13:25:00Z",
         "yes_ask": 0.72,
-        "no_ask": 0.33999999999999997,
-        "liquidity": 1450874
+        "no_ask": 0.35,
+        "liquidity": 1450996
     },
     {
         "source": "Kalshi",
@@ -2802,7 +2802,7 @@
         "end_date": "2025-01-13T13:25:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 974430
+        "liquidity": 974746
     },
     {
         "source": "Kalshi",
@@ -2813,7 +2813,7 @@
         "end_date": "2025-01-13T13:25:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 1014089
+        "liquidity": 1014493
     },
     {
         "source": "Kalshi",
@@ -2824,7 +2824,7 @@
         "end_date": "2025-01-13T13:25:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 876399
+        "liquidity": 876670
     },
     {
         "source": "Kalshi",
@@ -2835,7 +2835,7 @@
         "end_date": "2025-01-13T13:25:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 934563
+        "liquidity": 934827
     },
     {
         "source": "Kalshi",
@@ -2846,7 +2846,7 @@
         "end_date": "2025-01-13T13:25:00Z",
         "yes_ask": 0.24,
         "no_ask": 0.96,
-        "liquidity": 233767
+        "liquidity": 233809
     },
     {
         "source": "Kalshi",
@@ -2857,7 +2857,7 @@
         "end_date": "2025-01-13T13:25:00Z",
         "yes_ask": 0.94,
         "no_ask": 0.07999999999999996,
-        "liquidity": 466829
+        "liquidity": 464024
     },
     {
         "source": "Kalshi",
@@ -2868,7 +2868,7 @@
         "end_date": "2025-01-13T13:25:00Z",
         "yes_ask": 0.05,
         "no_ask": 0.99,
-        "liquidity": 875130
+        "liquidity": 875404
     },
     {
         "source": "Kalshi",
@@ -2879,7 +2879,7 @@
         "end_date": "2025-01-13T13:25:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 869673
+        "liquidity": 869829
     },
     {
         "source": "Kalshi",
@@ -3286,7 +3286,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.99,
         "no_ask": 0.97,
-        "liquidity": 1578314
+        "liquidity": 1577344
     },
     {
         "source": "Kalshi",
@@ -3748,7 +3748,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.05,
         "no_ask": 0.96,
-        "liquidity": 1860663
+        "liquidity": 1860567
     },
     {
         "source": "Kalshi",
@@ -3869,7 +3869,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.06,
         "no_ask": 0.96,
-        "liquidity": 776382
+        "liquidity": 776286
     },
     {
         "source": "Kalshi",
@@ -3912,8 +3912,8 @@
         "description": "If a new Nintendo console (other than another variation of the Nintendo Switch) has been announced before 2025, then the market resolves to Yes.",
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.74,
-        "no_ask": 0.4,
-        "liquidity": 1392304
+        "no_ask": 0.39,
+        "liquidity": 1394254
     },
     {
         "source": "Kalshi",
@@ -4122,7 +4122,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.2,
         "no_ask": 0.81,
-        "liquidity": 518047
+        "liquidity": 522847
     },
     {
         "source": "Kalshi",
@@ -4252,9 +4252,9 @@
         "headline": "How high will Ethereum get this year? $6,000",
         "description": "If the price of Ethereum is Above 5999.99 by Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2025-01-01T00:00:00Z",
-        "yes_ask": 0.33,
+        "yes_ask": 0.34,
         "no_ask": 0.97,
-        "liquidity": 43365
+        "liquidity": 42903
     },
     {
         "source": "Kalshi",
@@ -4274,9 +4274,9 @@
         "headline": "How high will Ethereum get this year? $4,500",
         "description": "If the price of Ethereum is Above 4499.99 by Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2025-01-01T00:00:00Z",
-        "yes_ask": 0.24,
+        "yes_ask": 0.33,
         "no_ask": 0.96,
-        "liquidity": 376435
+        "liquidity": 376147
     },
     {
         "source": "Kalshi",
@@ -4419,7 +4419,7 @@
         "end_date": "2026-01-02T04:59:00Z",
         "yes_ask": 0.37,
         "no_ask": 0.8,
-        "liquidity": 1035558
+        "liquidity": 1033558
     },
     {
         "source": "Kalshi",
@@ -4516,9 +4516,9 @@
         "headline": "How low will Bitcoin fall by year-end? $40,000",
         "description": "If the price of Bitcoin is below 40000 by Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2025-01-01T00:00:00Z",
-        "yes_ask": 0.18,
-        "no_ask": 0.86,
-        "liquidity": 570471
+        "yes_ask": 0.17,
+        "no_ask": 0.87,
+        "liquidity": 547738
     },
     {
         "source": "Kalshi",
@@ -4529,7 +4529,7 @@
         "end_date": "2025-01-01T00:00:00Z",
         "yes_ask": 0.12,
         "no_ask": 0.9,
-        "liquidity": 22405044
+        "liquidity": 22200454
     },
     {
         "source": "Kalshi",
@@ -4549,9 +4549,9 @@
         "headline": "How low will Bitcoin fall by year-end? $50,000",
         "description": "If the price of Bitcoin is below 50000 by Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2025-01-01T00:00:00Z",
-        "yes_ask": 0.39,
+        "yes_ask": 0.4,
         "no_ask": 0.62,
-        "liquidity": 653304
+        "liquidity": 635272
     },
     {
         "source": "Kalshi",
@@ -4561,8 +4561,8 @@
         "description": "If the price of Bitcoin is Above 999,999.99 by Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.02,
-        "no_ask": 0.99,
-        "liquidity": 527940
+        "no_ask": 1.0,
+        "liquidity": 526950
     },
     {
         "source": "Kalshi",
@@ -4573,7 +4573,7 @@
         "end_date": "2025-01-01T00:00:00Z",
         "yes_ask": 0.03,
         "no_ask": 0.98,
-        "liquidity": 535672
+        "liquidity": 535922
     },
     {
         "source": "Kalshi",
@@ -4582,9 +4582,9 @@
         "headline": "How high will Bitcoin get this year? $75,000",
         "description": "If the price of Bitcoin is Above 74999.99 by Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2025-01-01T00:00:00Z",
-        "yes_ask": 0.52,
-        "no_ask": 0.5,
-        "liquidity": 705325
+        "yes_ask": 0.51,
+        "no_ask": 0.51,
+        "liquidity": 713368
     },
     {
         "source": "Kalshi",
@@ -4593,9 +4593,9 @@
         "headline": "How high will Bitcoin get this year? $90,000",
         "description": "If the price of Bitcoin is Above 89999.99 by Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2025-01-01T00:00:00Z",
-        "yes_ask": 0.2,
+        "yes_ask": 0.19,
         "no_ask": 0.85,
-        "liquidity": 1004026
+        "liquidity": 1004270
     },
     {
         "source": "Kalshi",
@@ -4606,7 +4606,7 @@
         "end_date": "2025-01-01T00:00:00Z",
         "yes_ask": 0.38,
         "no_ask": 0.6599999999999999,
-        "liquidity": 866077
+        "liquidity": 867002
     },
     {
         "source": "Kalshi",
@@ -4617,7 +4617,7 @@
         "end_date": "2025-01-01T00:00:00Z",
         "yes_ask": 0.05,
         "no_ask": 0.97,
-        "liquidity": 748776
+        "liquidity": 751798
     },
     {
         "source": "Kalshi",
@@ -4626,9 +4626,9 @@
         "headline": "How high will Bitcoin get this year? $100,000",
         "description": "If the price of Bitcoin is Above 99999.99 by Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2025-01-01T00:00:00Z",
-        "yes_ask": 0.11,
+        "yes_ask": 0.1,
         "no_ask": 0.91,
-        "liquidity": 864962
+        "liquidity": 904970
     },
     {
         "source": "Kalshi",
@@ -4650,7 +4650,7 @@
         "end_date": "2024-10-31T23:00:00Z",
         "yes_ask": 0.03,
         "no_ask": 0.99,
-        "liquidity": 637055
+        "liquidity": 637649
     },
     {
         "source": "Kalshi",
@@ -4661,7 +4661,7 @@
         "end_date": "2024-11-30T00:00:00Z",
         "yes_ask": 0.1,
         "no_ask": 0.97,
-        "liquidity": 800885
+        "liquidity": 803385
     },
     {
         "source": "Kalshi",
@@ -4670,9 +4670,9 @@
         "headline": "When will Bitcoin hit $100k? Before January",
         "description": "If the price of Bitcoin is Above 99999.99 by Dec 31, 2024 at 7:00 PM ET, then the market resolves to Yes.",
         "end_date": "2025-01-01T00:00:00Z",
-        "yes_ask": 0.13,
+        "yes_ask": 0.14,
         "no_ask": 0.9299999999999999,
-        "liquidity": 993360
+        "liquidity": 1453174
     },
     {
         "source": "Kalshi",
@@ -4683,7 +4683,7 @@
         "end_date": "2024-09-30T23:00:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 502956
+        "liquidity": 503646
     },
     {
         "source": "Kalshi",
@@ -4814,8 +4814,8 @@
         "description": "If Netflix has a layoff event of at least 100 persons before Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.55,
-        "no_ask": 0.54,
-        "liquidity": 341622
+        "no_ask": 0.55,
+        "liquidity": 341136
     },
     {
         "source": "Kalshi",
@@ -4848,7 +4848,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.78,
         "no_ask": 0.48,
-        "liquidity": 810413
+        "liquidity": 809413
     },
     {
         "source": "Kalshi",
@@ -5068,7 +5068,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.15,
         "no_ask": 0.9299999999999999,
-        "liquidity": 1584721
+        "liquidity": 1585312
     },
     {
         "source": "Kalshi",
@@ -5079,7 +5079,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.25,
         "no_ask": 0.83,
-        "liquidity": 1698592
+        "liquidity": 1699939
     },
     {
         "source": "Kalshi",
@@ -5090,7 +5090,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.34,
         "no_ask": 0.74,
-        "liquidity": 1984972
+        "liquidity": 1984348
     },
     {
         "source": "Kalshi",
@@ -5101,7 +5101,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.47,
         "no_ask": 0.62,
-        "liquidity": 1714872
+        "liquidity": 1714264
     },
     {
         "source": "Kalshi",
@@ -5112,7 +5112,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.61,
         "no_ask": 0.45999999999999996,
-        "liquidity": 1416161
+        "liquidity": 1417280
     },
     {
         "source": "Kalshi",
@@ -5123,7 +5123,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.66,
         "no_ask": 0.41000000000000003,
-        "liquidity": 966644
+        "liquidity": 966364
     },
     {
         "source": "Kalshi",
@@ -5134,7 +5134,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.74,
         "no_ask": 0.33999999999999997,
-        "liquidity": 1245852
+        "liquidity": 1245452
     },
     {
         "source": "Kalshi",
@@ -5145,7 +5145,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.79,
         "no_ask": 0.29000000000000004,
-        "liquidity": 1769065
+        "liquidity": 1768485
     },
     {
         "source": "Kalshi",
@@ -5156,7 +5156,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.88,
         "no_ask": 0.19999999999999996,
-        "liquidity": 1401107
+        "liquidity": 1402850
     },
     {
         "source": "Kalshi",
@@ -5167,7 +5167,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.95,
         "no_ask": 0.13,
-        "liquidity": 1807922
+        "liquidity": 1807650
     },
     {
         "source": "Kalshi",
@@ -5552,7 +5552,7 @@
         "end_date": "2024-12-31T21:00:00Z",
         "yes_ask": 0.2,
         "no_ask": 0.8200000000000001,
-        "liquidity": 7584866
+        "liquidity": 7584838
     },
     {
         "source": "Kalshi",
@@ -5574,7 +5574,7 @@
         "end_date": "2024-12-31T21:00:00Z",
         "yes_ask": 0.06,
         "no_ask": 0.99,
-        "liquidity": 5513800
+        "liquidity": 5513787
     },
     {
         "source": "Kalshi",
@@ -5704,9 +5704,9 @@
         "headline": "Bird flu cases in 2024? Above 25",
         "description": "If the number of H5N1 cases in 2024 is above 25, then the market resolves to Yes.",
         "end_date": "2025-01-01T04:59:00Z",
-        "yes_ask": 0.29,
+        "yes_ask": 0.28,
         "no_ask": 0.76,
-        "liquidity": 146360
+        "liquidity": 150560
     },
     {
         "source": "Kalshi",
@@ -5715,9 +5715,9 @@
         "headline": "Bird flu cases in 2024? Above 50",
         "description": "If the number of H5N1 cases in 2024 is above 50, then the market resolves to Yes.",
         "end_date": "2025-01-01T04:59:00Z",
-        "yes_ask": 0.14,
+        "yes_ask": 0.12,
         "no_ask": 0.91,
-        "liquidity": 144324
+        "liquidity": 128524
     },
     {
         "source": "Kalshi",
@@ -5860,7 +5860,7 @@
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.94,
         "no_ask": 0.09999999999999998,
-        "liquidity": 1175124
+        "liquidity": 1177649
     },
     {
         "source": "Kalshi",
@@ -5891,9 +5891,9 @@
         "headline": "Top Artist on Spotify in 2024? Kendrick Lamar",
         "description": "If Kendrick Lamar is the most streamed Spotify artist in 2024, then the market resolves to Yes.",
         "end_date": "2025-01-01T04:59:00Z",
-        "yes_ask": 0.05,
-        "no_ask": 0.98,
-        "liquidity": 142244
+        "yes_ask": 0.08,
+        "no_ask": 0.97,
+        "liquidity": 152264
     },
     {
         "source": "Kalshi",
@@ -5926,7 +5926,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.02,
         "no_ask": 0.99,
-        "liquidity": 153952
+        "liquidity": 153352
     },
     {
         "source": "Kalshi",
@@ -5959,7 +5959,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.91,
         "no_ask": 0.13,
-        "liquidity": 689140
+        "liquidity": 693740
     },
     {
         "source": "Kalshi",
@@ -5981,7 +5981,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.04,
         "no_ask": 0.99,
-        "liquidity": 274449
+        "liquidity": 274249
     },
     {
         "source": "Kalshi",
@@ -6003,7 +6003,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.09,
         "no_ask": 0.97,
-        "liquidity": 434950
+        "liquidity": 434500
     },
     {
         "source": "Kalshi",
@@ -6014,7 +6014,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.12,
         "no_ask": 0.94,
-        "liquidity": 390832
+        "liquidity": 382992
     },
     {
         "source": "Kalshi",
@@ -6023,9 +6023,9 @@
         "headline": "How many weeks will The Tortured Poets Department be #1 in 2024? More than 16 weeks",
         "description": "If The Tortured Poets Department has had the #1 spot on the Billboard 200 for more than 16 total weeks (including non-consecutive weeks), then the market resolves to Yes.",
         "end_date": "2025-01-01T04:59:00Z",
-        "yes_ask": 0.2,
+        "yes_ask": 0.23,
         "no_ask": 0.86,
-        "liquidity": 432778
+        "liquidity": 420318
     },
     {
         "source": "Kalshi",
@@ -6035,8 +6035,8 @@
         "description": "If The Tortured Poets Department has had the #1 spot on the Billboard 200 for more than 15 Total weeks (including non-consecutive weeks), then the market resolves to Yes.",
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.32,
-        "no_ask": 0.69,
-        "liquidity": 492188
+        "no_ask": 0.72,
+        "liquidity": 378979
     },
     {
         "source": "Kalshi",
@@ -6232,9 +6232,9 @@
         "headline": "SpaceX Starship reaches orbit this year? Before Dec 31, 2024",
         "description": "If SpaceX's Starship has reached orbit on a mission before Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-31T04:59:00Z",
-        "yes_ask": 0.17,
+        "yes_ask": 0.18,
         "no_ask": 0.87,
-        "liquidity": 496359
+        "liquidity": 485919
     },
     {
         "source": "Kalshi",
@@ -6266,8 +6266,8 @@
         "description": "If SpaceX has more than 130 launches in 2024, then the market resolves to Yes.",
         "end_date": "2025-01-01T15:00:00Z",
         "yes_ask": 0.52,
-        "no_ask": 0.54,
-        "liquidity": 421157
+        "no_ask": 0.53,
+        "liquidity": 423012
     },
     {
         "source": "Kalshi",
@@ -6309,9 +6309,9 @@
         "headline": "How many launches will SpaceX have in 2024? 140",
         "description": "If SpaceX has more than 140 launches in 2024, then the market resolves to Yes.",
         "end_date": "2025-01-01T15:00:00Z",
-        "yes_ask": 0.16,
+        "yes_ask": 0.15,
         "no_ask": 0.9,
-        "liquidity": 370100
+        "liquidity": 371600
     },
     {
         "source": "Kalshi",
@@ -6376,8 +6376,8 @@
         "description": "If the government is shutdown at any 10:00 AM ET by 2024, then the market resolves to Yes.",
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.13,
-        "no_ask": 0.89,
-        "liquidity": 4099938
+        "no_ask": 0.9,
+        "liquidity": 4017134
     },
     {
         "source": "Kalshi",
@@ -6454,7 +6454,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.16,
         "no_ask": 0.87,
-        "liquidity": 3266466
+        "liquidity": 3266379
     },
     {
         "source": "Kalshi",
@@ -6465,7 +6465,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.4,
         "no_ask": 0.62,
-        "liquidity": 5347677
+        "liquidity": 5335009
     },
     {
         "source": "Kalshi",
@@ -6474,9 +6474,9 @@
         "headline": "Number of rate cuts in 2024? 4 cuts :: 100bps",
         "description": "If the Fed does exactly 4 cuts of 25 basis points in 2024, the market resolves to Yes.",
         "end_date": "2025-01-01T04:59:00Z",
-        "yes_ask": 0.35,
-        "no_ask": 0.6699999999999999,
-        "liquidity": 5283999
+        "yes_ask": 0.36,
+        "no_ask": 0.6599999999999999,
+        "liquidity": 5243553
     },
     {
         "source": "Kalshi",
@@ -6485,9 +6485,9 @@
         "headline": "Number of rate cuts in 2024? 3 cuts :: 75bps",
         "description": "If the Fed does exactly 3 cuts of 25 basis points in 2024, the market resolves to Yes.",
         "end_date": "2025-01-01T04:59:00Z",
-        "yes_ask": 0.07,
-        "no_ask": 0.94,
-        "liquidity": 4678544
+        "yes_ask": 0.06,
+        "no_ask": 0.95,
+        "liquidity": 4838519
     },
     {
         "source": "Kalshi",
@@ -6498,7 +6498,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 1674053
+        "liquidity": 1674095
     },
     {
         "source": "Kalshi",
@@ -6641,7 +6641,7 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.11,
         "no_ask": 0.9299999999999999,
-        "liquidity": 264728
+        "liquidity": 264717
     },
     {
         "source": "Kalshi",
@@ -6740,7 +6740,7 @@
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.06,
         "no_ask": 0.97,
-        "liquidity": 471757
+        "liquidity": 471660
     },
     {
         "source": "Kalshi",
@@ -6947,9 +6947,9 @@
         "headline": "Best LLM at the end of the year? Grok:: xAI",
         "description": "If XAI has the top-ranked LLM on Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-31T15:00:00Z",
-        "yes_ask": 0.06,
+        "yes_ask": 0.05,
         "no_ask": 0.97,
-        "liquidity": 550342
+        "liquidity": 557645
     },
     {
         "source": "Kalshi",
@@ -6960,7 +6960,7 @@
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.02,
         "no_ask": 0.99,
-        "liquidity": 273000
+        "liquidity": 273080
     },
     {
         "source": "Kalshi",
@@ -6970,8 +6970,8 @@
         "description": "If Meta has the top-ranked LLM on Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.05,
-        "no_ask": 0.96,
-        "liquidity": 818075
+        "no_ask": 0.98,
+        "liquidity": 818519
     },
     {
         "source": "Kalshi",
@@ -6982,7 +6982,7 @@
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.07,
         "no_ask": 0.95,
-        "liquidity": 489957
+        "liquidity": 488637
     },
     {
         "source": "Kalshi",
@@ -6993,7 +6993,7 @@
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 268545
+        "liquidity": 268575
     },
     {
         "source": "Kalshi",
@@ -7002,9 +7002,9 @@
         "headline": "Best LLM at the end of the year? Claude:: Anthropic",
         "description": "If Anthropic has the top-ranked LLM on Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-31T15:00:00Z",
-        "yes_ask": 0.25,
-        "no_ask": 0.83,
-        "liquidity": 397086
+        "yes_ask": 0.24,
+        "no_ask": 0.8200000000000001,
+        "liquidity": 397412
     },
     {
         "source": "Kalshi",
@@ -7024,9 +7024,9 @@
         "headline": "Best LLM at the end of the year? GPT:: OpenAI",
         "description": "If OpenAI has the top-ranked LLM on Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-31T15:00:00Z",
-        "yes_ask": 0.8,
-        "no_ask": 0.24,
-        "liquidity": 674054
+        "yes_ask": 0.79,
+        "no_ask": 0.22999999999999998,
+        "liquidity": 676231
     },
     {
         "source": "Kalshi",
@@ -7477,7 +7477,7 @@
         "end_date": "2024-12-18T18:55:00Z",
         "yes_ask": 0.03,
         "no_ask": 0.99,
-        "liquidity": 1494704
+        "liquidity": 1494427
     },
     {
         "source": "Kalshi",
@@ -7488,7 +7488,7 @@
         "end_date": "2024-12-18T18:55:00Z",
         "yes_ask": 0.02,
         "no_ask": 0.99,
-        "liquidity": 9315342
+        "liquidity": 9315108
     },
     {
         "source": "Kalshi",
@@ -7499,7 +7499,7 @@
         "end_date": "2024-12-18T18:55:00Z",
         "yes_ask": 0.03,
         "no_ask": 1.0,
-        "liquidity": 492218
+        "liquidity": 492170
     },
     {
         "source": "Kalshi",
@@ -7510,7 +7510,7 @@
         "end_date": "2024-12-18T18:55:00Z",
         "yes_ask": 0.08,
         "no_ask": 1.0,
-        "liquidity": 1367650
+        "liquidity": 1367341
     },
     {
         "source": "Kalshi",
@@ -7521,7 +7521,7 @@
         "end_date": "2024-12-18T18:55:00Z",
         "yes_ask": 0.11,
         "no_ask": 1.0,
-        "liquidity": 1286972
+        "liquidity": 1286659
     },
     {
         "source": "Kalshi",
@@ -7532,7 +7532,7 @@
         "end_date": "2024-12-18T18:55:00Z",
         "yes_ask": 0.49,
         "no_ask": 0.6599999999999999,
-        "liquidity": 5040464
+        "liquidity": 5040058
     },
     {
         "source": "Kalshi",
@@ -7543,7 +7543,7 @@
         "end_date": "2024-12-18T18:55:00Z",
         "yes_ask": 0.79,
         "no_ask": 0.31999999999999995,
-        "liquidity": 3795828
+        "liquidity": 3795275
     },
     {
         "source": "Kalshi",
@@ -7554,7 +7554,7 @@
         "end_date": "2024-12-18T18:55:00Z",
         "yes_ask": 0.93,
         "no_ask": 0.15000000000000002,
-        "liquidity": 1738209
+        "liquidity": 1725629
     },
     {
         "source": "Kalshi",
@@ -7565,7 +7565,7 @@
         "end_date": "2024-12-18T18:55:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.09999999999999998,
-        "liquidity": 1095982
+        "liquidity": 1095741
     },
     {
         "source": "Kalshi",
@@ -7576,7 +7576,7 @@
         "end_date": "2024-12-18T18:55:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.06999999999999995,
-        "liquidity": 1317023
+        "liquidity": 1316728
     },
     {
         "source": "Kalshi",
@@ -7707,8 +7707,8 @@
         "description": "If the NOAA's National Hurricane Center records more than 12 storms with maximum sustained windspeeds of 39 miles per hour or above between January 1, 2024 and December 01, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-02T04:59:00Z",
         "yes_ask": 0.95,
-        "no_ask": 0.14,
-        "liquidity": 345570
+        "no_ask": 0.10999999999999999,
+        "liquidity": 346571
     },
     {
         "source": "Kalshi",
@@ -7763,7 +7763,7 @@
         "end_date": "2024-12-02T04:59:00Z",
         "yes_ask": 0.06,
         "no_ask": 0.99,
-        "liquidity": 312570
+        "liquidity": 312636
     },
     {
         "source": "Kalshi",
@@ -7774,7 +7774,7 @@
         "end_date": "2024-12-02T04:59:00Z",
         "yes_ask": 0.48,
         "no_ask": 0.55,
-        "liquidity": 712088
+        "liquidity": 711498
     },
     {
         "source": "Kalshi",
@@ -7784,8 +7784,8 @@
         "description": "If the NOAA's National Hurricane Center records more than 10 storms with maximum sustained windspeeds of 39 miles per hour or above between January 1, 2024 and December 01, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-02T04:59:00Z",
         "yes_ask": 1.0,
-        "no_ask": 0.050000000000000044,
-        "liquidity": 111720
+        "no_ask": 0.030000000000000027,
+        "liquidity": 111950
     },
     {
         "source": "Kalshi",
@@ -7817,8 +7817,8 @@
         "description": "If the NOAA's National Hurricane Center records more than 6 hurricanes of hurricane category 3 or above between January 1, 2024 and December 01, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-02T04:59:00Z",
         "yes_ask": 0.11,
-        "no_ask": 0.98,
-        "liquidity": 295660
+        "no_ask": 0.97,
+        "liquidity": 305360
     },
     {
         "source": "Kalshi",
@@ -7827,9 +7827,9 @@
         "headline": "How many major Atlantic hurricanes will there be in 2024? 5",
         "description": "If the NOAA's National Hurricane Center records more than 5 hurricanes of hurricane category 3 or above between January 1, 2024 and December 01, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-02T04:59:00Z",
-        "yes_ask": 0.18,
-        "no_ask": 0.96,
-        "liquidity": 54971
+        "yes_ask": 0.19,
+        "no_ask": 0.95,
+        "liquidity": 63841
     },
     {
         "source": "Kalshi",
@@ -7838,9 +7838,9 @@
         "headline": "How many major Atlantic hurricanes will there be in 2024? 4",
         "description": "If the NOAA's National Hurricane Center records more than 4 hurricanes of hurricane category 3 or above between January 1, 2024 and December 01, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-02T04:59:00Z",
-        "yes_ask": 0.21,
-        "no_ask": 0.92,
-        "liquidity": 109047
+        "yes_ask": 0.22,
+        "no_ask": 0.88,
+        "liquidity": 110898
     },
     {
         "source": "Kalshi",
@@ -7849,9 +7849,9 @@
         "headline": "How many major Atlantic hurricanes will there be in 2024? 3",
         "description": "If the NOAA's National Hurricane Center records more than 3 hurricanes of hurricane category 3 or above between January 1, 2024 and December 01, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-02T04:59:00Z",
-        "yes_ask": 0.47,
-        "no_ask": 0.62,
-        "liquidity": 358760
+        "yes_ask": 0.49,
+        "no_ask": 0.6,
+        "liquidity": 362689
     },
     {
         "source": "Kalshi",
@@ -7860,9 +7860,9 @@
         "headline": "How many major Atlantic hurricanes will there be in 2024? 2",
         "description": "If the NOAA's National Hurricane Center records more than 2 hurricanes of hurricane category 3 or above between January 1, 2024 and December 01, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-02T04:59:00Z",
-        "yes_ask": 0.75,
-        "no_ask": 0.31000000000000005,
-        "liquidity": 456757
+        "yes_ask": 0.77,
+        "no_ask": 0.30000000000000004,
+        "liquidity": 454713
     },
     {
         "source": "Kalshi",
@@ -7895,7 +7895,7 @@
         "end_date": "2024-12-02T04:59:00Z",
         "yes_ask": 0.95,
         "no_ask": 0.06999999999999995,
-        "liquidity": 249536
+        "liquidity": 238836
     },
     {
         "source": "Kalshi",
@@ -7916,8 +7916,8 @@
         "description": "If the NOAA's National Hurricane Center records more than 10 hurricanes of hurricane category 1 or above between January 1, 2024 and December 01, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-02T04:59:00Z",
         "yes_ask": 0.34,
-        "no_ask": 0.9299999999999999,
-        "liquidity": 103335
+        "no_ask": 0.92,
+        "liquidity": 102503
     },
     {
         "source": "Kalshi",
@@ -7926,9 +7926,9 @@
         "headline": "Number of hurricanes in 2024? 7:: Above 2023 number",
         "description": "If the NOAA's National Hurricane Center records more than 7 hurricanes of hurricane category 1 or above between January 1, 2024 and December 01, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-02T04:59:00Z",
-        "yes_ask": 0.75,
-        "no_ask": 0.31000000000000005,
-        "liquidity": 298731
+        "yes_ask": 0.79,
+        "no_ask": 0.25,
+        "liquidity": 282231
     },
     {
         "source": "Kalshi",
@@ -7939,7 +7939,7 @@
         "end_date": "2024-12-02T04:59:00Z",
         "yes_ask": 0.53,
         "no_ask": 0.51,
-        "liquidity": 412773
+        "liquidity": 382673
     },
     {
         "source": "Kalshi",
@@ -7950,7 +7950,7 @@
         "end_date": "2024-12-02T04:59:00Z",
         "yes_ask": 0.03,
         "no_ask": 0.99,
-        "liquidity": 490141
+        "liquidity": 490212
     },
     {
         "source": "Kalshi",
@@ -7961,7 +7961,7 @@
         "end_date": "2024-12-02T04:59:00Z",
         "yes_ask": 0.03,
         "no_ask": 0.99,
-        "liquidity": 644404
+        "liquidity": 644418
     },
     {
         "source": "Kalshi",
@@ -7981,9 +7981,9 @@
         "headline": "Number of hurricanes in 2024? >12",
         "description": "If the NOAA's National Hurricane Center records more than 12 hurricanes of hurricane category 1 or above between January 1, 2024 and December 01, 2024, then the market resolves to Yes.",
         "end_date": "2024-12-02T04:59:00Z",
-        "yes_ask": 0.08,
+        "yes_ask": 0.07,
         "no_ask": 0.94,
-        "liquidity": 123905
+        "liquidity": 124075
     },
     {
         "source": "Kalshi",
@@ -8632,7 +8632,7 @@
         "end_date": "2024-11-30T21:00:00Z",
         "yes_ask": 0.05,
         "no_ask": 0.99,
-        "liquidity": 145680
+        "liquidity": 145215
     },
     {
         "source": "Kalshi",
@@ -9081,9 +9081,9 @@
         "headline": "Hurricane Milton category? Category 5",
         "description": "If Milton reaches maximum sustained winds of greater than or equal to 157 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.1,
+        "yes_ask": 0.12,
         "no_ask": 1.0,
-        "liquidity": 90
+        "liquidity": 51308
     },
     {
         "source": "Kalshi",
@@ -9092,9 +9092,9 @@
         "headline": "Hurricane Milton category? Category 4",
         "description": "If Milton reaches maximum sustained winds of greater than or equal to 130 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.12,
+        "yes_ask": 0.23,
         "no_ask": 0.99,
-        "liquidity": 9996
+        "liquidity": 51948
     },
     {
         "source": "Kalshi",
@@ -9103,9 +9103,9 @@
         "headline": "Hurricane Milton category? Category 3",
         "description": "If Milton reaches maximum sustained winds of greater than or equal to 111 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.25,
+        "yes_ask": 0.36,
         "no_ask": 0.99,
-        "liquidity": 24925
+        "liquidity": 57546
     },
     {
         "source": "Kalshi",
@@ -9114,9 +9114,9 @@
         "headline": "Hurricane Milton category? Category 2",
         "description": "If Milton reaches maximum sustained winds of greater than or equal to 96 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.39,
+        "yes_ask": 0.54,
         "no_ask": 0.99,
-        "liquidity": 99234
+        "liquidity": 121730
     },
     {
         "source": "Kalshi",
@@ -9125,9 +9125,9 @@
         "headline": "Hurricane Milton category? Category 1",
         "description": "If Milton reaches maximum sustained winds of greater than or equal to 74 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.55,
+        "yes_ask": 0.75,
         "no_ask": 0.99,
-        "liquidity": 247775
+        "liquidity": 259750
     },
     {
         "source": "Kalshi",
@@ -9158,9 +9158,9 @@
         "headline": "Hurricane Leslie category? Category 3",
         "description": "If Leslie reaches maximum sustained winds of greater than or equal to 111 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.55,
-        "no_ask": 0.9299999999999999,
-        "liquidity": 284500
+        "yes_ask": 0.45,
+        "no_ask": 0.92,
+        "liquidity": 304088
     },
     {
         "source": "Kalshi",
@@ -9169,9 +9169,9 @@
         "headline": "Hurricane Leslie category? Category 2",
         "description": "If Leslie reaches maximum sustained winds of greater than or equal to 96 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.74,
+        "yes_ask": 0.64,
         "no_ask": 0.9,
-        "liquidity": 347168
+        "liquidity": 347744
     },
     {
         "source": "Kalshi",
@@ -9180,9 +9180,9 @@
         "headline": "Hurricane Leslie category? Category 1",
         "description": "If Leslie reaches maximum sustained winds of greater than or equal to 74 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.94,
+        "yes_ask": 0.84,
         "no_ask": 0.8,
-        "liquidity": 440890
+        "liquidity": 441730
     },
     {
         "source": "Kalshi",
@@ -9213,9 +9213,9 @@
         "headline": "Hurricane Kirk category? Category 3",
         "description": "If Kirk reaches maximum sustained winds of greater than or equal to 111 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.54,
+        "yes_ask": 0.45,
         "no_ask": 0.6,
-        "liquidity": 539559
+        "liquidity": 540920
     },
     {
         "source": "Kalshi",
@@ -9224,9 +9224,9 @@
         "headline": "Hurricane Kirk category? Category 2",
         "description": "If Kirk reaches maximum sustained winds of greater than or equal to 96 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.72,
-        "no_ask": 0.43000000000000005,
-        "liquidity": 588258
+        "yes_ask": 0.63,
+        "no_ask": 0.5800000000000001,
+        "liquidity": 587833
     },
     {
         "source": "Kalshi",
@@ -9236,8 +9236,8 @@
         "description": "If Kirk reaches maximum sustained winds of greater than or equal to 74 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
         "yes_ask": 0.84,
-        "no_ask": 0.27,
-        "liquidity": 465448
+        "no_ask": 0.5,
+        "liquidity": 464330
     },
     {
         "source": "Kalshi",
@@ -9290,9 +9290,9 @@
         "headline": "Hurricane Joyce category? Category 1",
         "description": "If Joyce reaches maximum sustained winds of greater than or equal to 74 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.33,
+        "yes_ask": 0.19,
         "no_ask": 0.99,
-        "liquidity": 50444
+        "liquidity": 50334
     },
     {
         "source": "Kalshi",
@@ -9323,9 +9323,9 @@
         "headline": "Hurricane Isaac category? Category 3",
         "description": "If Isaac reaches maximum sustained winds of greater than or equal to 111 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.05,
-        "no_ask": 0.97,
-        "liquidity": 43072
+        "yes_ask": 0.04,
+        "no_ask": 1.0,
+        "liquidity": 33412
     },
     {
         "source": "Kalshi",
@@ -9336,7 +9336,7 @@
         "end_date": "2024-12-01T04:59:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.010000000000000009,
-        "liquidity": 99658
+        "liquidity": 114658
     },
     {
         "source": "Kalshi",
@@ -9358,7 +9358,7 @@
         "end_date": "2024-12-01T04:59:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 62873
+        "liquidity": 73073
     },
     {
         "source": "Kalshi",
@@ -9433,9 +9433,9 @@
         "headline": "Hurricane Patty category? Category 3",
         "description": "If Patty reaches maximum sustained winds of greater than or equal to 111 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.32,
+        "yes_ask": 0.31,
         "no_ask": 1.0,
-        "liquidity": 32948
+        "liquidity": 33258
     },
     {
         "source": "Kalshi",
@@ -9444,9 +9444,9 @@
         "headline": "Hurricane Patty category? Category 2",
         "description": "If Patty reaches maximum sustained winds of greater than or equal to 96 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.48,
+        "yes_ask": 0.47,
         "no_ask": 0.99,
-        "liquidity": 48491
+        "liquidity": 48961
     },
     {
         "source": "Kalshi",
@@ -9455,9 +9455,9 @@
         "headline": "Hurricane Patty category? Category 1",
         "description": "If Patty reaches maximum sustained winds of greater than or equal to 74 mph according to the NOAA's National Hurricane Center, then the market resolves to Yes.",
         "end_date": "2024-12-01T04:59:00Z",
-        "yes_ask": 0.62,
+        "yes_ask": 0.61,
         "no_ask": 0.97,
-        "liquidity": 370262
+        "liquidity": 370872
     },
     {
         "source": "Kalshi",
@@ -9479,7 +9479,7 @@
         "end_date": "2024-11-25T15:00:00Z",
         "yes_ask": 0.57,
         "no_ask": 0.47,
-        "liquidity": 711705
+        "liquidity": 681835
     },
     {
         "source": "Kalshi",
@@ -9490,7 +9490,7 @@
         "end_date": "2024-11-25T15:00:00Z",
         "yes_ask": 0.72,
         "no_ask": 0.31999999999999995,
-        "liquidity": 593536
+        "liquidity": 377536
     },
     {
         "source": "Kalshi",
@@ -9501,7 +9501,7 @@
         "end_date": "2024-11-25T15:00:00Z",
         "yes_ask": 0.9,
         "no_ask": 0.14,
-        "liquidity": 558908
+        "liquidity": 549908
     },
     {
         "source": "Kalshi",
@@ -10282,7 +10282,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.23,
         "no_ask": 0.83,
-        "liquidity": 140723
+        "liquidity": 141068
     },
     {
         "source": "Kalshi",
@@ -10293,7 +10293,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.7,
         "no_ask": 0.31999999999999995,
-        "liquidity": 135040
+        "liquidity": 137555
     },
     {
         "source": "Kalshi",
@@ -10304,7 +10304,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.29,
         "no_ask": 0.78,
-        "liquidity": 154268
+        "liquidity": 154761
     },
     {
         "source": "Kalshi",
@@ -10326,7 +10326,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.09,
         "no_ask": 0.98,
-        "liquidity": 81860
+        "liquidity": 81950
     },
     {
         "source": "Kalshi",
@@ -10348,7 +10348,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.36,
         "no_ask": 0.72,
-        "liquidity": 131240
+        "liquidity": 129800
     },
     {
         "source": "Kalshi",
@@ -10359,7 +10359,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.75,
         "no_ask": 0.31000000000000005,
-        "liquidity": 133703
+        "liquidity": 135578
     },
     {
         "source": "Kalshi",
@@ -10370,7 +10370,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.12,
         "no_ask": 0.95,
-        "liquidity": 149460
+        "liquidity": 149820
     },
     {
         "source": "Kalshi",
@@ -10381,7 +10381,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.66,
         "no_ask": 0.4,
-        "liquidity": 132510
+        "liquidity": 134160
     },
     {
         "source": "Kalshi",
@@ -10401,9 +10401,9 @@
         "headline": "Grammy nominations for Album of the Year? Cowboy Carter:: Beyonce",
         "description": "If Cowboy Carter has been nominated for Album of the Year at the 67th Grammy Awards, then the market resolves to Yes.",
         "end_date": "2025-12-31T15:00:00Z",
-        "yes_ask": 0.96,
+        "yes_ask": 0.95,
         "no_ask": 0.10999999999999999,
-        "liquidity": 160810
+        "liquidity": 180030
     },
     {
         "source": "Kalshi",
@@ -10425,7 +10425,7 @@
         "end_date": "2025-12-31T15:00:00Z",
         "yes_ask": 0.97,
         "no_ask": 0.09999999999999998,
-        "liquidity": 150570
+        "liquidity": 140870
     },
     {
         "source": "Kalshi",
@@ -10491,7 +10491,7 @@
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 1220420
+        "liquidity": 1220214
     },
     {
         "source": "Kalshi",
@@ -10502,7 +10502,7 @@
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 1889487
+        "liquidity": 1889504
     },
     {
         "source": "Kalshi",
@@ -10513,7 +10513,7 @@
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 0.05,
         "no_ask": 0.97,
-        "liquidity": 1232048
+        "liquidity": 1228898
     },
     {
         "source": "Kalshi",
@@ -10522,9 +10522,9 @@
         "headline": "Fed decision on Nov 7th meeting? Cut >25bps",
         "description": "If the Federal Reserve does a Cut of >25bps on November 07, 2024, then the market resolves to Yes.",
         "end_date": "2024-11-07T18:55:00Z",
-        "yes_ask": 0.46,
-        "no_ask": 0.56,
-        "liquidity": 5115930
+        "yes_ask": 0.47,
+        "no_ask": 0.55,
+        "liquidity": 5248206
     },
     {
         "source": "Kalshi",
@@ -10534,8 +10534,8 @@
         "description": "If the Federal Reserve does a Cut of 25bps on November 07, 2024, then the market resolves to Yes.",
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 0.53,
-        "no_ask": 0.48,
-        "liquidity": 3329153
+        "no_ask": 0.5,
+        "liquidity": 3816263
     },
     {
         "source": "Kalshi",
@@ -10546,7 +10546,7 @@
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 0.02,
         "no_ask": 0.99,
-        "liquidity": 999916
+        "liquidity": 999713
     },
     {
         "source": "Kalshi",
@@ -10557,7 +10557,7 @@
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 0.02,
         "no_ask": 1.0,
-        "liquidity": 863332
+        "liquidity": 864602
     },
     {
         "source": "Kalshi",
@@ -10568,7 +10568,7 @@
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 0.02,
         "no_ask": 1.0,
-        "liquidity": 1022750
+        "liquidity": 1022334
     },
     {
         "source": "Kalshi",
@@ -10579,7 +10579,7 @@
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 0.06,
         "no_ask": 0.97,
-        "liquidity": 1545163
+        "liquidity": 1544225
     },
     {
         "source": "Kalshi",
@@ -10590,7 +10590,7 @@
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 0.54,
         "no_ask": 0.51,
-        "liquidity": 2581871
+        "liquidity": 2580817
     },
     {
         "source": "Kalshi",
@@ -10601,7 +10601,7 @@
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 0.97,
         "no_ask": 0.06999999999999995,
-        "liquidity": 2273318
+        "liquidity": 2273135
     },
     {
         "source": "Kalshi",
@@ -10612,7 +10612,7 @@
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 0.97,
         "no_ask": 0.040000000000000036,
-        "liquidity": 3420704
+        "liquidity": 3420254
     },
     {
         "source": "Kalshi",
@@ -10623,7 +10623,7 @@
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.030000000000000027,
-        "liquidity": 921997
+        "liquidity": 921843
     },
     {
         "source": "Kalshi",
@@ -10634,7 +10634,7 @@
         "end_date": "2024-11-07T18:55:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.030000000000000027,
-        "liquidity": 608314
+        "liquidity": 608133
     },
     {
         "source": "Kalshi",
@@ -10753,9 +10753,9 @@
         "headline": "How many presidential debates in 2024? 3:: Exactly one more debate",
         "description": "If there are exactly 3 debates between the presidential nominees for the Democratic and Republican Parties, the market resolves to Yes.",
         "end_date": "2024-11-05T15:00:00Z",
-        "yes_ask": 0.27,
-        "no_ask": 0.74,
-        "liquidity": 3481529
+        "yes_ask": 0.3,
+        "no_ask": 0.71,
+        "liquidity": 2581004
     },
     {
         "source": "Kalshi",
@@ -10764,9 +10764,9 @@
         "headline": "How many presidential debates in 2024? 2:: No more debates",
         "description": "If there are exactly 2 debates between the presidential nominees for the Democratic and Republican Parties, the market resolves to Yes.",
         "end_date": "2024-11-05T15:00:00Z",
-        "yes_ask": 0.73,
-        "no_ask": 0.28,
-        "liquidity": 4322380
+        "yes_ask": 0.69,
+        "no_ask": 0.32999999999999996,
+        "liquidity": 3872087
     },
     {
         "source": "Kalshi",
@@ -10809,8 +10809,8 @@
         "description": "If Blitz has a Tomatometer score of above 95 on Nov 4, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.18,
-        "no_ask": 0.85,
-        "liquidity": 710627
+        "no_ask": 0.86,
+        "liquidity": 651768
     },
     {
         "source": "Kalshi",
@@ -10821,7 +10821,7 @@
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.59,
         "no_ask": 0.45999999999999996,
-        "liquidity": 763789
+        "liquidity": 734989
     },
     {
         "source": "Kalshi",
@@ -10864,8 +10864,8 @@
         "description": "If the preliminary number of tornadoes in Oct is above 75 , then the market resolves to Yes.",
         "end_date": "2024-11-01T03:59:00Z",
         "yes_ask": 1.0,
-        "no_ask": 0.9299999999999999,
-        "liquidity": 18600
+        "no_ask": 0.92,
+        "liquidity": 41600
     },
     {
         "source": "Kalshi",
@@ -10875,8 +10875,8 @@
         "description": "If the preliminary number of tornadoes in Oct is above 50 , then the market resolves to Yes.",
         "end_date": "2024-11-01T03:59:00Z",
         "yes_ask": 0.6,
-        "no_ask": 0.8,
-        "liquidity": 11000
+        "no_ask": 0.78,
+        "liquidity": 30500
     },
     {
         "source": "Kalshi",
@@ -10896,9 +10896,9 @@
         "headline": "Number of tornadoes in Oct 2024? 175",
         "description": "If the preliminary number of tornadoes in Oct is above 175 , then the market resolves to Yes.",
         "end_date": "2024-11-01T03:59:00Z",
-        "yes_ask": 0.99,
-        "no_ask": 1.0,
-        "liquidity": 4950
+        "yes_ask": 1.0,
+        "no_ask": 0.99,
+        "liquidity": 24750
     },
     {
         "source": "Kalshi",
@@ -10907,9 +10907,9 @@
         "headline": "Number of tornadoes in Oct 2024? 150",
         "description": "If the preliminary number of tornadoes in Oct is above 150 , then the market resolves to Yes.",
         "end_date": "2024-11-01T03:59:00Z",
-        "yes_ask": 0.99,
-        "no_ask": 1.0,
-        "liquidity": 4950
+        "yes_ask": 1.0,
+        "no_ask": 0.98,
+        "liquidity": 24500
     },
     {
         "source": "Kalshi",
@@ -10918,9 +10918,9 @@
         "headline": "Number of tornadoes in Oct 2024? 125",
         "description": "If the preliminary number of tornadoes in Oct is above 125 , then the market resolves to Yes.",
         "end_date": "2024-11-01T03:59:00Z",
-        "yes_ask": 0.99,
-        "no_ask": 1.0,
-        "liquidity": 4950
+        "yes_ask": 1.0,
+        "no_ask": 0.97,
+        "liquidity": 24250
     },
     {
         "source": "Kalshi",
@@ -10930,8 +10930,8 @@
         "description": "If the preliminary number of tornadoes in Oct is above 100 , then the market resolves to Yes.",
         "end_date": "2024-11-01T03:59:00Z",
         "yes_ask": 1.0,
-        "no_ask": 0.97,
-        "liquidity": 19400
+        "no_ask": 0.95,
+        "liquidity": 43150
     },
     {
         "source": "Kalshi",
@@ -10941,8 +10941,8 @@
         "description": "If the preliminary number of tornadoes in Oct is above 25 , then the market resolves to Yes.",
         "end_date": "2024-11-01T03:59:00Z",
         "yes_ask": 1.0,
-        "no_ask": 0.52,
-        "liquidity": 13000
+        "no_ask": 0.44999999999999996,
+        "liquidity": 27500
     },
     {
         "source": "Kalshi",
@@ -11171,9 +11171,9 @@
         "headline": "Jobs numbers in Oct 2024? -50,000",
         "description": "If the increase in total non-farm payroll employment is above -50000 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of October 2024, then the market resolves to Yes.",
         "end_date": "2024-11-01T12:25:00Z",
-        "yes_ask": 0.0,
-        "no_ask": 1.0,
-        "liquidity": 0
+        "yes_ask": 1.0,
+        "no_ask": 0.99,
+        "liquidity": 9900
     },
     {
         "source": "Kalshi",
@@ -11182,9 +11182,9 @@
         "headline": "Jobs numbers in Oct 2024? 50,000",
         "description": "If the increase in total non-farm payroll employment is above 50000 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of October 2024, then the market resolves to Yes.",
         "end_date": "2024-11-01T12:25:00Z",
-        "yes_ask": 0.0,
-        "no_ask": 1.0,
-        "liquidity": 0
+        "yes_ask": 1.0,
+        "no_ask": 0.99,
+        "liquidity": 9900
     },
     {
         "source": "Kalshi",
@@ -11193,7 +11193,7 @@
         "headline": "Jobs numbers in Oct 2024? 250,000",
         "description": "If the increase in total non-farm payroll employment is above 250000 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of October 2024, then the market resolves to Yes.",
         "end_date": "2024-11-01T12:25:00Z",
-        "yes_ask": 0.0,
+        "yes_ask": 1.0,
         "no_ask": 1.0,
         "liquidity": 0
     },
@@ -11204,9 +11204,9 @@
         "headline": "Jobs numbers in Oct 2024? 200,000",
         "description": "If the increase in total non-farm payroll employment is above 200000 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of October 2024, then the market resolves to Yes.",
         "end_date": "2024-11-01T12:25:00Z",
-        "yes_ask": 0.0,
+        "yes_ask": 0.99,
         "no_ask": 1.0,
-        "liquidity": 0
+        "liquidity": 9900
     },
     {
         "source": "Kalshi",
@@ -11226,9 +11226,9 @@
         "headline": "Jobs numbers in Oct 2024? 100,000",
         "description": "If the increase in total non-farm payroll employment is above 100000 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of October 2024, then the market resolves to Yes.",
         "end_date": "2024-11-01T12:25:00Z",
-        "yes_ask": 0.0,
-        "no_ask": 1.0,
-        "liquidity": 0
+        "yes_ask": 0.99,
+        "no_ask": 0.99,
+        "liquidity": 19800
     },
     {
         "source": "Kalshi",
@@ -11237,9 +11237,9 @@
         "headline": "Jobs numbers in Oct 2024? 0",
         "description": "If the increase in total non-farm payroll employment is above 0 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of October 2024, then the market resolves to Yes.",
         "end_date": "2024-11-01T12:25:00Z",
-        "yes_ask": 0.0,
-        "no_ask": 1.0,
-        "liquidity": 0
+        "yes_ask": 1.0,
+        "no_ask": 0.99,
+        "liquidity": 9900
     },
     {
         "source": "Kalshi",
@@ -11250,7 +11250,7 @@
         "end_date": "2024-10-30T12:25:00Z",
         "yes_ask": 0.43,
         "no_ask": 0.61,
-        "liquidity": 2055998
+        "liquidity": 2055955
     },
     {
         "source": "Kalshi",
@@ -11404,7 +11404,7 @@
         "end_date": "2024-10-21T14:00:00Z",
         "yes_ask": 0.27,
         "no_ask": 0.79,
-        "liquidity": 677654
+        "liquidity": 635154
     },
     {
         "source": "Kalshi",
@@ -11457,9 +11457,9 @@
         "headline": "Sep 2024 temperature increase? 1.30001 or above",
         "description": "If the Land Ocean-Temperature Index for Sep 2024 is above 1.30, then the market resolves to Yes.",
         "end_date": "2024-10-16T03:59:00Z",
-        "yes_ask": 0.19,
+        "yes_ask": 0.2,
         "no_ask": 0.88,
-        "liquidity": 228676
+        "liquidity": 228576
     },
     {
         "source": "Kalshi",
@@ -11612,8 +11612,8 @@
         "description": "If inflation in Argentina is above 225% in Sep 2024 , then the market resolves to Yes.",
         "end_date": "2024-10-14T03:59:00Z",
         "yes_ask": 0.09,
-        "no_ask": 0.98,
-        "liquidity": 838439
+        "no_ask": 0.97,
+        "liquidity": 838536
     },
     {
         "source": "Kalshi",
@@ -11644,9 +11644,9 @@
         "headline": "Argentina inflation in Sep 2024? 200%",
         "description": "If inflation in Argentina is above 200% in Sep 2024 , then the market resolves to Yes.",
         "end_date": "2024-10-14T03:59:00Z",
-        "yes_ask": 0.88,
+        "yes_ask": 0.89,
         "no_ask": 0.20999999999999996,
-        "liquidity": 1712822
+        "liquidity": 1710438
     },
     {
         "source": "Kalshi",
@@ -11666,9 +11666,9 @@
         "headline": "\"Terrifier 3\" Rotten Tomatoes score? Above 80",
         "description": "If Terrifier 3 has a Tomatometer score of above 80 on Oct 14, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-10-14T14:00:00Z",
-        "yes_ask": 0.6,
+        "yes_ask": 0.69,
         "no_ask": 0.5,
-        "liquidity": 648080
+        "liquidity": 621330
     },
     {
         "source": "Kalshi",
@@ -11679,7 +11679,7 @@
         "end_date": "2024-10-14T14:00:00Z",
         "yes_ask": 0.09,
         "no_ask": 0.96,
-        "liquidity": 596319
+        "liquidity": 595383
     },
     {
         "source": "Kalshi",
@@ -11690,7 +11690,7 @@
         "end_date": "2024-10-14T14:00:00Z",
         "yes_ask": 0.38,
         "no_ask": 0.6699999999999999,
-        "liquidity": 913189
+        "liquidity": 943411
     },
     {
         "source": "Kalshi",
@@ -11701,7 +11701,7 @@
         "end_date": "2024-10-14T14:00:00Z",
         "yes_ask": 0.75,
         "no_ask": 0.30000000000000004,
-        "liquidity": 785384
+        "liquidity": 767309
     },
     {
         "source": "Kalshi",
@@ -11711,8 +11711,8 @@
         "description": "If Terrifier 3 has a Tomatometer score of above 60 on Oct 14, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-10-14T14:00:00Z",
         "yes_ask": 0.95,
-        "no_ask": 0.98,
-        "liquidity": 25674
+        "no_ask": 0.85,
+        "liquidity": 68174
     },
     {
         "source": "Kalshi",
@@ -11732,9 +11732,9 @@
         "headline": "Ozempic and Wegovy prescriptions increase in Q3 2024? 30%",
         "description": "If prescriptions made for weight loss drugs (using semaglutide and tirzepatide) grow by 30% in Q3 2024, then the market resolves to Yes.",
         "end_date": "2024-10-11T03:59:00Z",
-        "yes_ask": 0.25,
-        "no_ask": 0.98,
-        "liquidity": 415527
+        "yes_ask": 0.24,
+        "no_ask": 0.97,
+        "liquidity": 417387
     },
     {
         "source": "Kalshi",
@@ -11743,9 +11743,9 @@
         "headline": "Ozempic and Wegovy prescriptions increase in Q3 2024? 25%",
         "description": "If prescriptions made for weight loss drugs (using semaglutide and tirzepatide) grow by 25% in Q3 2024, then the market resolves to Yes.",
         "end_date": "2024-10-11T03:59:00Z",
-        "yes_ask": 0.35,
+        "yes_ask": 0.34,
         "no_ask": 0.98,
-        "liquidity": 371859
+        "liquidity": 369384
     },
     {
         "source": "Kalshi",
@@ -11754,9 +11754,9 @@
         "headline": "Ozempic and Wegovy prescriptions increase in Q3 2024? 20%",
         "description": "If prescriptions made for weight loss drugs (using semaglutide and tirzepatide) grow by 20% in Q3 2024, then the market resolves to Yes.",
         "end_date": "2024-10-11T03:59:00Z",
-        "yes_ask": 0.34,
+        "yes_ask": 0.33,
         "no_ask": 0.96,
-        "liquidity": 487094
+        "liquidity": 487034
     },
     {
         "source": "Kalshi",
@@ -11765,9 +11765,9 @@
         "headline": "Ozempic and Wegovy prescriptions increase in Q3 2024? 18%",
         "description": "If prescriptions made for weight loss drugs (using semaglutide and tirzepatide) grow by 18% in Q3 2024, then the market resolves to Yes.",
         "end_date": "2024-10-11T03:59:00Z",
-        "yes_ask": 0.73,
+        "yes_ask": 0.72,
         "no_ask": 0.98,
-        "liquidity": 260071
+        "liquidity": 259911
     },
     {
         "source": "Kalshi",
@@ -11788,8 +11788,8 @@
         "description": "If prescriptions made for weight loss drugs (using semaglutide and tirzepatide) grow by 12% in Q3 2024, then the market resolves to Yes.",
         "end_date": "2024-10-11T03:59:00Z",
         "yes_ask": 0.99,
-        "no_ask": 0.54,
-        "liquidity": 240382
+        "no_ask": 0.55,
+        "liquidity": 238762
     },
     {
         "source": "Kalshi",
@@ -11976,7 +11976,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 0.05,
         "no_ask": 0.99,
-        "liquidity": 785726
+        "liquidity": 785731
     },
     {
         "source": "Kalshi",
@@ -11987,7 +11987,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 0.05,
         "no_ask": 0.99,
-        "liquidity": 775017
+        "liquidity": 775022
     },
     {
         "source": "Kalshi",
@@ -12218,7 +12218,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 0.13,
         "no_ask": 0.97,
-        "liquidity": 857307
+        "liquidity": 852457
     },
     {
         "source": "Kalshi",
@@ -12294,8 +12294,8 @@
         "description": "If gas prices increase by more than -4% in September 2024, then the market resolves to Yes.",
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 0.84,
-        "no_ask": 0.28,
-        "liquidity": 1182512
+        "no_ask": 0.43999999999999995,
+        "liquidity": 1331732
     },
     {
         "source": "Kalshi",
@@ -12438,7 +12438,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.010000000000000009,
-        "liquidity": 613815
+        "liquidity": 613820
     },
     {
         "source": "Kalshi",
@@ -12449,7 +12449,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.010000000000000009,
-        "liquidity": 624439
+        "liquidity": 624448
     },
     {
         "source": "Kalshi",
@@ -12504,7 +12504,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 0.38,
         "no_ask": 0.73,
-        "liquidity": 1973342
+        "liquidity": 1961412
     },
     {
         "source": "Kalshi",
@@ -12515,7 +12515,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 0.73,
         "no_ask": 0.39,
-        "liquidity": 1888375
+        "liquidity": 1879139
     },
     {
         "source": "Kalshi",
@@ -12526,7 +12526,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 0.99,
         "no_ask": 0.09999999999999998,
-        "liquidity": 772729
+        "liquidity": 773020
     },
     {
         "source": "Kalshi",
@@ -12603,7 +12603,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 0.03,
         "no_ask": 1.0,
-        "liquidity": 744041
+        "liquidity": 744050
     },
     {
         "source": "Kalshi",
@@ -12647,7 +12647,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 0.06,
         "no_ask": 0.98,
-        "liquidity": 830564
+        "liquidity": 831650
     },
     {
         "source": "Kalshi",
@@ -12658,7 +12658,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 0.16,
         "no_ask": 0.94,
-        "liquidity": 1188291
+        "liquidity": 1187815
     },
     {
         "source": "Kalshi",
@@ -12669,7 +12669,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 0.97,
         "no_ask": 0.12,
-        "liquidity": 1102449
+        "liquidity": 1102752
     },
     {
         "source": "Kalshi",
@@ -12680,7 +12680,7 @@
         "end_date": "2024-10-10T12:25:00Z",
         "yes_ask": 0.6,
         "no_ask": 0.5,
-        "liquidity": 1982934
+        "liquidity": 1983436
     },
     {
         "source": "Kalshi",
@@ -12757,7 +12757,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.04,
         "no_ask": 1.0,
-        "liquidity": 424792
+        "liquidity": 435192
     },
     {
         "source": "Kalshi",
@@ -12766,9 +12766,9 @@
         "headline": "Billboard Hot 100 #1 on Oct 5, 2024 chart? Espresso:: Sabrina Carpenter",
         "description": "If Espresso is the #1 song on the Billboard Hot 100 charts for Oct 5, 2024 then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.09,
+        "yes_ask": 0.08,
         "no_ask": 1.0,
-        "liquidity": 227517
+        "liquidity": 237917
     },
     {
         "source": "Kalshi",
@@ -12779,7 +12779,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.04,
         "no_ask": 1.0,
-        "liquidity": 424992
+        "liquidity": 435792
     },
     {
         "source": "Kalshi",
@@ -12790,7 +12790,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.020000000000000018,
-        "liquidity": 218192
+        "liquidity": 223792
     },
     {
         "source": "Kalshi",
@@ -12801,7 +12801,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.04,
         "no_ask": 1.0,
-        "liquidity": 426792
+        "liquidity": 437192
     },
     {
         "source": "Kalshi",
@@ -12821,9 +12821,9 @@
         "headline": "\"Silent Hill 2\" Metacritic score? 90:: Universal Acclaim",
         "description": "If the Metascore for Silent Hill 2 is above 89 three days after release at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-10-11T14:00:00Z",
-        "yes_ask": 0.18,
+        "yes_ask": 0.19,
         "no_ask": 0.9,
-        "liquidity": 133045
+        "liquidity": 132597
     },
     {
         "source": "Kalshi",
@@ -12833,8 +12833,8 @@
         "description": "If the Metascore for Silent Hill 2 is above 84 three days after release at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-10-11T14:00:00Z",
         "yes_ask": 0.45,
-        "no_ask": 0.97,
-        "liquidity": 60188
+        "no_ask": 0.98,
+        "liquidity": 60238
     },
     {
         "source": "Kalshi",
@@ -12876,9 +12876,9 @@
         "headline": "This Sep 2024 is the hottest September ever? Sep 2024",
         "description": "If Sep 2024 is the hottest September ever, then the market resolves to Yes.",
         "end_date": "2024-10-01T03:59:00Z",
-        "yes_ask": 0.09,
+        "yes_ask": 0.1,
         "no_ask": 0.97,
-        "liquidity": 1269890
+        "liquidity": 1269557
     },
     {
         "source": "Kalshi",
@@ -12898,9 +12898,9 @@
         "headline": "\"Joker: Folie à Deux\" Rotten Tomatoes score? Above 55",
         "description": "If Joker: Folie à Deux has a Tomatometer score of above 55 on Oct 7, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-10-07T14:00:00Z",
-        "yes_ask": 0.75,
-        "no_ask": 0.37,
-        "liquidity": 1279009
+        "yes_ask": 0.69,
+        "no_ask": 0.4,
+        "liquidity": 1327349
     },
     {
         "source": "Kalshi",
@@ -12909,9 +12909,9 @@
         "headline": "\"Joker: Folie à Deux\" Rotten Tomatoes score? Above 50",
         "description": "If Joker: Folie à Deux has a Tomatometer score of above 50 on Oct 7, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-10-07T14:00:00Z",
-        "yes_ask": 0.94,
-        "no_ask": 0.14,
-        "liquidity": 1094694
+        "yes_ask": 0.91,
+        "no_ask": 0.10999999999999999,
+        "liquidity": 1278014
     },
     {
         "source": "Kalshi",
@@ -12975,9 +12975,9 @@
         "headline": "\"Joker: Folie à Deux\" Rotten Tomatoes score? Above 69:: Higher than Joker",
         "description": "If Joker: Folie à Deux has a Tomatometer score of above 69 on Oct 7, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-10-07T14:00:00Z",
-        "yes_ask": 0.14,
+        "yes_ask": 0.16,
         "no_ask": 0.94,
-        "liquidity": 271112
+        "liquidity": 268954
     },
     {
         "source": "Kalshi",
@@ -12986,9 +12986,9 @@
         "headline": "\"Joker: Folie à Deux\" Rotten Tomatoes score? Above 60:: This movie is “Fresh!\"",
         "description": "If Joker: Folie à Deux has a Tomatometer score of above 60 on Oct 7, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-10-07T14:00:00Z",
-        "yes_ask": 0.54,
-        "no_ask": 0.6599999999999999,
-        "liquidity": 1226486
+        "yes_ask": 0.46,
+        "no_ask": 0.64,
+        "liquidity": 1277686
     },
     {
         "source": "Kalshi",
@@ -14616,7 +14616,7 @@
         "end_date": "2024-10-04T12:25:00Z",
         "yes_ask": 0.08,
         "no_ask": 0.98,
-        "liquidity": 108884
+        "liquidity": 108084
     },
     {
         "source": "Kalshi",
@@ -14627,7 +14627,7 @@
         "end_date": "2024-10-04T12:25:00Z",
         "yes_ask": 0.1,
         "no_ask": 0.97,
-        "liquidity": 1354160
+        "liquidity": 1339870
     },
     {
         "source": "Kalshi",
@@ -14638,7 +14638,7 @@
         "end_date": "2024-10-04T12:25:00Z",
         "yes_ask": 0.28,
         "no_ask": 0.77,
-        "liquidity": 1932250
+        "liquidity": 1973633
     },
     {
         "source": "Kalshi",
@@ -14647,9 +14647,9 @@
         "headline": "Unemployment in Sep 2024? 4.2%",
         "description": "If the seasonally adjusted unemployment rate (U-3) reported by the Bureau of Labor Statistics in the Employment Situation Report is above 4.2% in September 2024, then the market resolves to Yes.",
         "end_date": "2024-10-04T12:25:00Z",
-        "yes_ask": 0.62,
+        "yes_ask": 0.63,
         "no_ask": 0.49,
-        "liquidity": 2340180
+        "liquidity": 2332067
     },
     {
         "source": "Kalshi",
@@ -14658,9 +14658,9 @@
         "headline": "Unemployment in Sep 2024? 4.1%",
         "description": "If the seasonally adjusted unemployment rate (U-3) reported by the Bureau of Labor Statistics in the Employment Situation Report is above 4.1% in September 2024, then the market resolves to Yes.",
         "end_date": "2024-10-04T12:25:00Z",
-        "yes_ask": 0.79,
+        "yes_ask": 0.8,
         "no_ask": 0.30000000000000004,
-        "liquidity": 1948681
+        "liquidity": 2078754
     },
     {
         "source": "Kalshi",
@@ -14671,7 +14671,7 @@
         "end_date": "2024-10-04T12:25:00Z",
         "yes_ask": 0.94,
         "no_ask": 0.13,
-        "liquidity": 1007797
+        "liquidity": 1063869
     },
     {
         "source": "Kalshi",
@@ -14682,7 +14682,7 @@
         "end_date": "2024-10-04T12:25:00Z",
         "yes_ask": 0.99,
         "no_ask": 0.06000000000000005,
-        "liquidity": 146084
+        "liquidity": 147884
     },
     {
         "source": "Kalshi",
@@ -14693,7 +14693,7 @@
         "end_date": "2024-10-04T12:25:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.030000000000000027,
-        "liquidity": 852155
+        "liquidity": 852175
     },
     {
         "source": "Kalshi",
@@ -14812,9 +14812,9 @@
         "headline": "Jobs numbers in Sep 2024? 142,000",
         "description": "If the increase in total non-farm payroll employment is above 142000 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of September 2024, then the market resolves to Yes.",
         "end_date": "2024-10-04T12:25:00Z",
-        "yes_ask": 0.58,
+        "yes_ask": 0.57,
         "no_ask": 0.49,
-        "liquidity": 1888237
+        "liquidity": 1884524
     },
     {
         "source": "Kalshi",
@@ -14845,9 +14845,9 @@
         "headline": "Jobs numbers in Sep 2024? 200,000",
         "description": "If the increase in total non-farm payroll employment is above 200000 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of September 2024, then the market resolves to Yes.",
         "end_date": "2024-10-04T12:25:00Z",
-        "yes_ask": 0.24,
+        "yes_ask": 0.25,
         "no_ask": 0.85,
-        "liquidity": 1886574
+        "liquidity": 2055067
     },
     {
         "source": "Kalshi",
@@ -14856,9 +14856,9 @@
         "headline": "Jobs numbers in Sep 2024? 150,000",
         "description": "If the increase in total non-farm payroll employment is above 150000 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of September 2024, then the market resolves to Yes.",
         "end_date": "2024-10-04T12:25:00Z",
-        "yes_ask": 0.5,
+        "yes_ask": 0.52,
         "no_ask": 0.54,
-        "liquidity": 2154368
+        "liquidity": 2160916
     },
     {
         "source": "Kalshi",
@@ -14879,8 +14879,8 @@
         "description": "If the increase in total non-farm payroll employment is above 100000 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of September 2024, then the market resolves to Yes.",
         "end_date": "2024-10-04T12:25:00Z",
         "yes_ask": 0.76,
-        "no_ask": 0.26,
-        "liquidity": 2202148
+        "no_ask": 0.27,
+        "liquidity": 2202086
     },
     {
         "source": "Kalshi",
@@ -14901,8 +14901,8 @@
         "description": "If Tesla has at least 490000 total cars produced in Q3 2024, then the market resolves to Yes.",
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 0.2,
-        "no_ask": 0.88,
-        "liquidity": 505100
+        "no_ask": 0.98,
+        "liquidity": 2411300
     },
     {
         "source": "Kalshi",
@@ -14913,7 +14913,7 @@
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.31999999999999995,
-        "liquidity": 88100
+        "liquidity": 86450
     },
     {
         "source": "Kalshi",
@@ -14946,7 +14946,7 @@
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 0.07,
         "no_ask": 1.0,
-        "liquidity": 8692
+        "liquidity": 4692
     },
     {
         "source": "Kalshi",
@@ -14955,9 +14955,9 @@
         "headline": "Tesla production in Q3 2024? Above 480000",
         "description": "If Tesla has at least 480000 total cars produced in Q3 2024, then the market resolves to Yes.",
         "end_date": "2024-10-01T03:59:00Z",
-        "yes_ask": 0.26,
-        "no_ask": 0.83,
-        "liquidity": 848320
+        "yes_ask": 0.27,
+        "no_ask": 0.9,
+        "liquidity": 1242159
     },
     {
         "source": "Kalshi",
@@ -15044,8 +15044,8 @@
         "description": "If Tesla has at least 460000 total deliveries in Q3 2024, then the market resolves to Yes.",
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 0.99,
-        "no_ask": 0.39,
-        "liquidity": 49028
+        "no_ask": 0.41000000000000003,
+        "liquidity": 47741
     },
     {
         "source": "Kalshi",
@@ -15122,7 +15122,7 @@
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 0.92,
         "no_ask": 0.17000000000000004,
-        "liquidity": 3481753
+        "liquidity": 3480614
     },
     {
         "source": "Kalshi",
@@ -15131,9 +15131,9 @@
         "headline": "The President's 538 approval rating on Oct 2, 2024? 42.6% or above",
         "description": "If the President's approval rating according to FiveThirtyEight is above 42.5% on October 02, 2024, then the market resolves to Yes.",
         "end_date": "2024-10-03T03:59:00Z",
-        "yes_ask": 0.07,
+        "yes_ask": 0.06,
         "no_ask": 0.97,
-        "liquidity": 871094
+        "liquidity": 662701
     },
     {
         "source": "Kalshi",
@@ -15142,9 +15142,9 @@
         "headline": "The President's 538 approval rating on Oct 2, 2024? 42.1% to 42.5%",
         "description": "If the President's approval rating according to FiveThirtyEight is between 42.1-42.5% on October 02, 2024, then the market resolves to Yes.",
         "end_date": "2024-10-03T03:59:00Z",
-        "yes_ask": 0.13,
+        "yes_ask": 0.12,
         "no_ask": 0.91,
-        "liquidity": 400948
+        "liquidity": 194910
     },
     {
         "source": "Kalshi",
@@ -15154,8 +15154,8 @@
         "description": "If the President's approval rating according to FiveThirtyEight is between 41.6-42.0% on October 02, 2024, then the market resolves to Yes.",
         "end_date": "2024-10-03T03:59:00Z",
         "yes_ask": 0.32,
-        "no_ask": 0.72,
-        "liquidity": 841052
+        "no_ask": 0.98,
+        "liquidity": 81803
     },
     {
         "source": "Kalshi",
@@ -15164,9 +15164,9 @@
         "headline": "The President's 538 approval rating on Oct 2, 2024? 41.1% to 41.5%",
         "description": "If the President's approval rating according to FiveThirtyEight is between 41.1-41.5% on October 02, 2024, then the market resolves to Yes.",
         "end_date": "2024-10-03T03:59:00Z",
-        "yes_ask": 0.37,
-        "no_ask": 0.6799999999999999,
-        "liquidity": 1233930
+        "yes_ask": 0.52,
+        "no_ask": 0.79,
+        "liquidity": 296649
     },
     {
         "source": "Kalshi",
@@ -15175,9 +15175,9 @@
         "headline": "The President's 538 approval rating on Oct 2, 2024? 40.6% to 41%",
         "description": "If the President's approval rating according to FiveThirtyEight is between 40.6-41.0% on October 02, 2024, then the market resolves to Yes.",
         "end_date": "2024-10-03T03:59:00Z",
-        "yes_ask": 0.22,
-        "no_ask": 0.86,
-        "liquidity": 378434
+        "yes_ask": 0.21,
+        "no_ask": 0.96,
+        "liquidity": 240393
     },
     {
         "source": "Kalshi",
@@ -15197,9 +15197,9 @@
         "headline": "The President's 538 approval rating on Oct 2, 2024? 39.6% to 40%",
         "description": "If the President's approval rating according to FiveThirtyEight is between 39.6-40.0% on October 02, 2024, then the market resolves to Yes.",
         "end_date": "2024-10-03T03:59:00Z",
-        "yes_ask": 0.04,
+        "yes_ask": 0.03,
         "no_ask": 1.0,
-        "liquidity": 839368
+        "liquidity": 838342
     },
     {
         "source": "Kalshi",
@@ -15208,9 +15208,9 @@
         "headline": "The President's 538 approval rating on Oct 2, 2024? 39% or below",
         "description": "If the President's approval rating according to FiveThirtyEight is below 39.1% on October 02, 2024, then the market resolves to Yes.",
         "end_date": "2024-10-03T03:59:00Z",
-        "yes_ask": 0.04,
+        "yes_ask": 0.03,
         "no_ask": 1.0,
-        "liquidity": 235806
+        "liquidity": 235896
     },
     {
         "source": "Kalshi",
@@ -15219,9 +15219,9 @@
         "headline": "The President's 538 approval rating on Oct 2, 2024? 39.1% to 39.5%",
         "description": "If the President's approval rating according to FiveThirtyEight is between 39.1-39.5% on October 02, 2024, then the market resolves to Yes.",
         "end_date": "2024-10-03T03:59:00Z",
-        "yes_ask": 0.04,
+        "yes_ask": 0.03,
         "no_ask": 1.0,
-        "liquidity": 246418
+        "liquidity": 246508
     },
     {
         "source": "Kalshi",
@@ -15373,9 +15373,9 @@
         "headline": "Number of tornadoes in Sep 2024? 75",
         "description": "If the preliminary number of tornadoes in Sep is above 75 , then the market resolves to Yes.",
         "end_date": "2024-10-01T03:59:00Z",
-        "yes_ask": 0.15,
+        "yes_ask": 0.39,
         "no_ask": 0.88,
-        "liquidity": 714211
+        "liquidity": 954166
     },
     {
         "source": "Kalshi",
@@ -15386,7 +15386,7 @@
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.020000000000000018,
-        "liquidity": 192227
+        "liquidity": 187967
     },
     {
         "source": "Kalshi",
@@ -15417,9 +15417,9 @@
         "headline": "Number of tornadoes in Sep 2024? 125",
         "description": "If the preliminary number of tornadoes in Sep is above 125 , then the market resolves to Yes.",
         "end_date": "2024-10-01T03:59:00Z",
-        "yes_ask": 0.88,
+        "yes_ask": 0.84,
         "no_ask": 1.0,
-        "liquidity": 24174
+        "liquidity": 23132
     },
     {
         "source": "Kalshi",
@@ -15462,8 +15462,8 @@
         "description": "If the total precipitation at Central Park, New York City in Sep 2024 is strictly greater than 4 inches, then the market resolves to Yes.",
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 0.04,
-        "no_ask": 0.99,
-        "liquidity": 6702
+        "no_ask": 1.0,
+        "liquidity": 6405
     },
     {
         "source": "Kalshi",
@@ -15473,8 +15473,8 @@
         "description": "If the total precipitation at Central Park, New York City in Sep 2024 is strictly greater than 3.5 inches, then the market resolves to Yes.",
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 0.05,
-        "no_ask": 1.0,
-        "liquidity": 6227
+        "no_ask": 0.99,
+        "liquidity": 6524
     },
     {
         "source": "Kalshi",
@@ -15496,7 +15496,7 @@
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 0.09,
         "no_ask": 0.99,
-        "liquidity": 192615
+        "liquidity": 193245
     },
     {
         "source": "Kalshi",
@@ -15507,7 +15507,7 @@
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 0.04,
         "no_ask": 0.99,
-        "liquidity": 197309
+        "liquidity": 197141
     },
     {
         "source": "Kalshi",
@@ -15518,7 +15518,7 @@
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 0.25,
         "no_ask": 0.96,
-        "liquidity": 290101
+        "liquidity": 236650
     },
     {
         "source": "Kalshi",
@@ -15540,7 +15540,7 @@
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 0.02,
         "no_ask": 1.0,
-        "liquidity": 796705
+        "liquidity": 796753
     },
     {
         "source": "Kalshi",
@@ -17463,9 +17463,9 @@
         "headline": "\"The Wild Robot\" Rotten Tomatoes score? Above 97::",
         "description": "If The Wild Robot has a Tomatometer score of above 97 on Sep 30, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-09-30T14:00:00Z",
-        "yes_ask": 0.82,
+        "yes_ask": 0.91,
         "no_ask": 0.24,
-        "liquidity": 903304
+        "liquidity": 949164
     },
     {
         "source": "Kalshi",
@@ -17474,9 +17474,9 @@
         "headline": "\"The Wild Robot\" Rotten Tomatoes score? Above 95::",
         "description": "If The Wild Robot has a Tomatometer score of above 95 on Sep 30, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-09-30T14:00:00Z",
-        "yes_ask": 0.99,
-        "no_ask": 0.040000000000000036,
-        "liquidity": 117624
+        "yes_ask": 1.0,
+        "no_ask": 0.030000000000000027,
+        "liquidity": 107070
     },
     {
         "source": "Kalshi",
@@ -17508,8 +17508,8 @@
         "description": "If Megalopolis has a Tomatometer score of above 47 on Dec 31, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.99,
-        "no_ask": 0.19999999999999996,
-        "liquidity": 209266
+        "no_ask": 0.18999999999999995,
+        "liquidity": 199856
     },
     {
         "source": "Kalshi",
@@ -17520,7 +17520,7 @@
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 157358
+        "liquidity": 122858
     },
     {
         "source": "Kalshi",
@@ -17540,9 +17540,9 @@
         "headline": "\"Megalopolis\" Rotten Tomatoes score? Above 50",
         "description": "If Megalopolis has a Tomatometer score of above 50 on Sep 30, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-12-31T15:00:00Z",
-        "yes_ask": 0.1,
+        "yes_ask": 0.08,
         "no_ask": 0.97,
-        "liquidity": 1380294
+        "liquidity": 1381735
     },
     {
         "source": "Kalshi",
@@ -17575,7 +17575,7 @@
         "end_date": "2024-12-31T15:00:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 10436
+        "liquidity": 10514
     },
     {
         "source": "Kalshi",
@@ -17584,9 +17584,9 @@
         "headline": "\"Megalopolis\" Rotten Tomatoes score? Above 45",
         "description": "If Megalopolis has a Tomatometer score of above 45 on Sep 30, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-12-31T15:00:00Z",
-        "yes_ask": 0.99,
+        "yes_ask": 1.0,
         "no_ask": 0.030000000000000027,
-        "liquidity": 53761
+        "liquidity": 19339
     },
     {
         "source": "Kalshi",
@@ -17597,7 +17597,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.1,
         "no_ask": 1.0,
-        "liquidity": 8897
+        "liquidity": 17102
     },
     {
         "source": "Kalshi",
@@ -17606,9 +17606,9 @@
         "headline": "Highest temperature in NYC on Sep 29, 2024? 70° to 71°",
         "description": "If the highest temperature recorded in Central Park, New York for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is between 70-71°, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.18,
-        "no_ask": 1.0,
-        "liquidity": 12594
+        "yes_ask": 0.1,
+        "no_ask": 0.98,
+        "liquidity": 18068
     },
     {
         "source": "Kalshi",
@@ -17617,9 +17617,9 @@
         "headline": "Highest temperature in NYC on Sep 29, 2024? 68° to 69°",
         "description": "If the highest temperature recorded in Central Park, New York for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is between 68-69°, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.23,
-        "no_ask": 0.86,
-        "liquidity": 52995
+        "yes_ask": 0.27,
+        "no_ask": 0.79,
+        "liquidity": 103603
     },
     {
         "source": "Kalshi",
@@ -17628,9 +17628,9 @@
         "headline": "Highest temperature in NYC on Sep 29, 2024? 66° to 67°",
         "description": "If the highest temperature recorded in Central Park, New York for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is between 66-67°, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.62,
-        "no_ask": 0.44999999999999996,
-        "liquidity": 64811
+        "yes_ask": 0.54,
+        "no_ask": 0.53,
+        "liquidity": 84486
     },
     {
         "source": "Kalshi",
@@ -17639,9 +17639,9 @@
         "headline": "Highest temperature in NYC on Sep 29, 2024? 64° to 65°",
         "description": "If the highest temperature recorded in Central Park, New York for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is between 64-65°, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.22,
-        "no_ask": 0.79,
-        "liquidity": 707498
+        "yes_ask": 0.26,
+        "no_ask": 0.81,
+        "liquidity": 793769
     },
     {
         "source": "Kalshi",
@@ -17650,9 +17650,9 @@
         "headline": "Highest temperature in NYC on Sep 29, 2024? 63° or below",
         "description": "If the highest temperature recorded in Central Park, New York for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is less than 64°, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.1,
-        "no_ask": 0.97,
-        "liquidity": 286109
+        "yes_ask": 0.72,
+        "no_ask": 0.96,
+        "liquidity": 376614
     },
     {
         "source": "Kalshi",
@@ -17662,8 +17662,8 @@
         "description": "If the highest temperature recorded in Miami, FL for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is greater than 94°, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.1,
-        "no_ask": 0.95,
-        "liquidity": 55459
+        "no_ask": 0.94,
+        "liquidity": 87822
     },
     {
         "source": "Kalshi",
@@ -17674,7 +17674,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.05,
         "no_ask": 1.0,
-        "liquidity": 10706
+        "liquidity": 18560
     },
     {
         "source": "Kalshi",
@@ -17683,9 +17683,9 @@
         "headline": "Highest temperature in Miami on Sep 29, 2024? 93° to 94°",
         "description": "If the highest temperature recorded in Miami, FL for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is between 93-94°, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.6,
-        "no_ask": 0.47,
-        "liquidity": 47293
+        "yes_ask": 0.63,
+        "no_ask": 0.43000000000000005,
+        "liquidity": 92791
     },
     {
         "source": "Kalshi",
@@ -17694,9 +17694,9 @@
         "headline": "Highest temperature in Miami on Sep 29, 2024? 91° to 92°",
         "description": "If the highest temperature recorded in Miami, FL for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is between 91-92°, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.36,
-        "no_ask": 0.71,
-        "liquidity": 289619
+        "yes_ask": 0.3,
+        "no_ask": 0.74,
+        "liquidity": 205440
     },
     {
         "source": "Kalshi",
@@ -17705,9 +17705,9 @@
         "headline": "Highest temperature in Miami on Sep 29, 2024? 89° to 90°",
         "description": "If the highest temperature recorded in Miami, FL for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is between 89-90°, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.05,
+        "yes_ask": 0.09,
         "no_ask": 1.0,
-        "liquidity": 9224
+        "liquidity": 17295
     },
     {
         "source": "Kalshi",
@@ -17718,7 +17718,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.05,
         "no_ask": 1.0,
-        "liquidity": 10809
+        "liquidity": 17530
     },
     {
         "source": "Kalshi",
@@ -17727,9 +17727,9 @@
         "headline": "Highest temperature in Chicago on Sep 29, 2024? 77° or above",
         "description": "If the highest temperature recorded at Chicago Midway, IL for September 29, 2024, is greater than 76° according to the NWS's Daily Climate Report, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.17,
-        "no_ask": 0.9299999999999999,
-        "liquidity": 92238
+        "yes_ask": 0.29,
+        "no_ask": 0.77,
+        "liquidity": 94538
     },
     {
         "source": "Kalshi",
@@ -17738,9 +17738,9 @@
         "headline": "Highest temperature in Chicago on Sep 29, 2024? 75° to 76°",
         "description": "If the highest temperature recorded at Chicago Midway, IL for September 29, 2024, is between 75-76° according to the NWS's Daily Climate Report, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.52,
+        "yes_ask": 0.53,
         "no_ask": 0.53,
-        "liquidity": 143983
+        "liquidity": 112692
     },
     {
         "source": "Kalshi",
@@ -17749,9 +17749,9 @@
         "headline": "Highest temperature in Chicago on Sep 29, 2024? 73° to 74°",
         "description": "If the highest temperature recorded at Chicago Midway, IL for September 29, 2024, is between 73-74° according to the NWS's Daily Climate Report, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.32,
-        "no_ask": 0.75,
-        "liquidity": 51074
+        "yes_ask": 0.25,
+        "no_ask": 0.79,
+        "liquidity": 178332
     },
     {
         "source": "Kalshi",
@@ -17760,9 +17760,9 @@
         "headline": "Highest temperature in Chicago on Sep 29, 2024? 71° to 72°",
         "description": "If the highest temperature recorded at Chicago Midway, IL for September 29, 2024, is between 71-72° according to the NWS's Daily Climate Report, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.13,
-        "no_ask": 0.96,
-        "liquidity": 44601
+        "yes_ask": 0.46,
+        "no_ask": 1.0,
+        "liquidity": 17013
     },
     {
         "source": "Kalshi",
@@ -17773,7 +17773,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.05,
         "no_ask": 1.0,
-        "liquidity": 8252
+        "liquidity": 17714
     },
     {
         "source": "Kalshi",
@@ -17784,7 +17784,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.09,
         "no_ask": 1.0,
-        "liquidity": 8610
+        "liquidity": 17875
     },
     {
         "source": "Kalshi",
@@ -17793,9 +17793,9 @@
         "headline": "Highest temperature in Austin on Sep 29, 2024? 98° or above",
         "description": "If the highest temperature recorded in Austin Bergstrom for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is greater than 97°, then the market resolves to Yes.",
         "end_date": "2024-09-30T04:59:00Z",
-        "yes_ask": 0.24,
-        "no_ask": 0.97,
-        "liquidity": 57592
+        "yes_ask": 0.1,
+        "no_ask": 1.0,
+        "liquidity": 17225
     },
     {
         "source": "Kalshi",
@@ -17806,7 +17806,7 @@
         "end_date": "2024-09-30T04:59:00Z",
         "yes_ask": 0.03,
         "no_ask": 1.0,
-        "liquidity": 8478
+        "liquidity": 17144
     },
     {
         "source": "Kalshi",
@@ -17815,9 +17815,9 @@
         "headline": "Highest temperature in Austin on Sep 29, 2024? 96° to 97°",
         "description": "If the highest temperature recorded in Austin Bergstrom for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is between 96-97°, then the market resolves to Yes.",
         "end_date": "2024-09-30T04:59:00Z",
-        "yes_ask": 0.31,
-        "no_ask": 0.75,
-        "liquidity": 170411
+        "yes_ask": 0.33,
+        "no_ask": 0.72,
+        "liquidity": 173420
     },
     {
         "source": "Kalshi",
@@ -17826,9 +17826,9 @@
         "headline": "Highest temperature in Austin on Sep 29, 2024? 94° to 95°",
         "description": "If the highest temperature recorded in Austin Bergstrom for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is between 94-95°, then the market resolves to Yes.",
         "end_date": "2024-09-30T04:59:00Z",
-        "yes_ask": 0.55,
-        "no_ask": 0.52,
-        "liquidity": 291802
+        "yes_ask": 0.57,
+        "no_ask": 0.49,
+        "liquidity": 454028
     },
     {
         "source": "Kalshi",
@@ -17837,9 +17837,9 @@
         "headline": "Highest temperature in Austin on Sep 29, 2024? 92° to 93°",
         "description": "If the highest temperature recorded in Austin Bergstrom for September 29, 2024 as reported by the National Weather Service's Daily Climate Report, is between 92-93°, then the market resolves to Yes.",
         "end_date": "2024-09-30T04:59:00Z",
-        "yes_ask": 0.16,
-        "no_ask": 0.88,
-        "liquidity": 42419
+        "yes_ask": 0.14,
+        "no_ask": 0.87,
+        "liquidity": 182867
     },
     {
         "source": "Kalshi",
@@ -17850,7 +17850,7 @@
         "end_date": "2024-09-30T04:59:00Z",
         "yes_ask": 0.03,
         "no_ask": 1.0,
-        "liquidity": 8583
+        "liquidity": 17657
     },
     {
         "source": "Kalshi",
@@ -18112,9 +18112,9 @@
         "headline": "Gas prices in the US up this week? 3.214",
         "description": "If average regular gas prices for United States are strictly greater than $3.214 on Sep 30, 2024 according to AAA,  the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.53,
-        "no_ask": 0.5900000000000001,
-        "liquidity": 1276212
+        "yes_ask": 0.54,
+        "no_ask": 0.5800000000000001,
+        "liquidity": 1252524
     },
     {
         "source": "Kalshi",
@@ -18191,7 +18191,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 214778
+        "liquidity": 213520
     },
     {
         "source": "Kalshi",
@@ -18202,7 +18202,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.94,
         "no_ask": 0.21999999999999997,
-        "liquidity": 1656497
+        "liquidity": 1624302
     },
     {
         "source": "Kalshi",
@@ -18212,8 +18212,8 @@
         "description": "If average regular gas prices for United States are strictly greater than $3.15 on Sep 30, 2024 according to AAA,  the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.99,
-        "no_ask": 0.030000000000000027,
-        "liquidity": 312016
+        "no_ask": 0.040000000000000036,
+        "liquidity": 746484
     },
     {
         "source": "Kalshi",
@@ -18290,7 +18290,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.04,
         "no_ask": 1.0,
-        "liquidity": 125542
+        "liquidity": 125442
     },
     {
         "source": "Kalshi",
@@ -18301,7 +18301,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.04,
         "no_ask": 1.0,
-        "liquidity": 127097
+        "liquidity": 126742
     },
     {
         "source": "Kalshi",
@@ -18310,9 +18310,9 @@
         "headline": "TSA avg check-ins from Sep 23 to 29, 2024? 2.45 million",
         "description": "If weekly average TSA airport screenings are above 2.45 million for the week ending September 29, 2024, according to the TSA, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.09,
+        "yes_ask": 0.08,
         "no_ask": 0.99,
-        "liquidity": 41624
+        "liquidity": 40269
     },
     {
         "source": "Kalshi",
@@ -18321,9 +18321,9 @@
         "headline": "TSA avg check-ins from Sep 23 to 29, 2024? 2.4 million",
         "description": "If weekly average TSA airport screenings are above 2.4 million for the week ending September 29, 2024, according to the TSA, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.35,
-        "no_ask": 0.8200000000000001,
-        "liquidity": 244200
+        "yes_ask": 0.65,
+        "no_ask": 0.81,
+        "liquidity": 117298
     },
     {
         "source": "Kalshi",
@@ -18332,9 +18332,9 @@
         "headline": "TSA avg check-ins from Sep 23 to 29, 2024? 2.35 million",
         "description": "If weekly average TSA airport screenings are above 2.35 million for the week ending September 29, 2024, according to the TSA, then the market resolves to Yes.",
         "end_date": "2024-09-30T03:59:00Z",
-        "yes_ask": 0.9,
-        "no_ask": 0.22999999999999998,
-        "liquidity": 218935
+        "yes_ask": 0.99,
+        "no_ask": 0.21999999999999997,
+        "liquidity": 56147
     },
     {
         "source": "Kalshi",
@@ -18345,7 +18345,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 0.99,
         "no_ask": 0.020000000000000018,
-        "liquidity": 151124
+        "liquidity": 33124
     },
     {
         "source": "Kalshi",
@@ -18356,7 +18356,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.06000000000000005,
-        "liquidity": 149162
+        "liquidity": 146912
     },
     {
         "source": "Kalshi",
@@ -18389,7 +18389,7 @@
         "end_date": "2024-09-30T03:59:00Z",
         "yes_ask": 1.0,
         "no_ask": 0.040000000000000036,
-        "liquidity": 134522
+        "liquidity": 31022
     },
     {
         "source": "Kalshi",
@@ -18398,9 +18398,9 @@
         "headline": "Highest temperature in NYC on Sep 28, 2024? 76° or above",
         "description": "If the highest temperature recorded in Central Park, New York for September 28, 2024 as reported by the National Weather Service's Daily Climate Report, is greater than 75°, then the market resolves to Yes.",
         "end_date": "2024-09-29T03:59:00Z",
-        "yes_ask": 0.02,
+        "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 8399
+        "liquidity": 6649
     },
     {
         "source": "Kalshi",
@@ -18409,9 +18409,9 @@
         "headline": "Highest temperature in NYC on Sep 28, 2024? 74° to 75°",
         "description": "If the highest temperature recorded in Central Park, New York for September 28, 2024 as reported by the National Weather Service's Daily Climate Report, is between 74-75°, then the market resolves to Yes.",
         "end_date": "2024-09-29T03:59:00Z",
-        "yes_ask": 0.07,
+        "yes_ask": 0.02,
         "no_ask": 1.0,
-        "liquidity": 15218
+        "liquidity": 11088
     },
     {
         "source": "Kalshi",
@@ -18420,9 +18420,9 @@
         "headline": "Highest temperature in NYC on Sep 28, 2024? 72° to 73°",
         "description": "If the highest temperature recorded in Central Park, New York for September 28, 2024 as reported by the National Weather Service's Daily Climate Report, is between 72-73°, then the market resolves to Yes.",
         "end_date": "2024-09-29T03:59:00Z",
-        "yes_ask": 0.05,
-        "no_ask": 0.99,
-        "liquidity": 14705
+        "yes_ask": 0.02,
+        "no_ask": 1.0,
+        "liquidity": 19788
     },
     {
         "source": "Kalshi",
@@ -18431,9 +18431,9 @@
         "headline": "Highest temperature in NYC on Sep 28, 2024? 70° to 71°",
         "description": "If the highest temperature recorded in Central Park, New York for September 28, 2024 as reported by the National Weather Service's Daily Climate Report, is between 70-71°, then the market resolves to Yes.",
         "end_date": "2024-09-29T03:59:00Z",
-        "yes_ask": 0.38,
-        "no_ask": 0.98,
-        "liquidity": 573865
+        "yes_ask": 0.01,
+        "no_ask": 1.0,
+        "liquidity": 470554
     },
     {
         "source": "Kalshi",
@@ -18442,9 +18442,9 @@
         "headline": "Highest temperature in NYC on Sep 28, 2024? 68° to 69°",
         "description": "If the highest temperature recorded in Central Park, New York for September 28, 2024 as reported by the National Weather Service's Daily Climate Report, is between 68-69°, then the market resolves to Yes.",
         "end_date": "2024-09-29T03:59:00Z",
-        "yes_ask": 0.96,
-        "no_ask": 0.39,
-        "liquidity": 133785
+        "yes_ask": 1.0,
+        "no_ask": 0.010000000000000009,
+        "liquidity": 48585
     },
     {
         "source": "Kalshi",
@@ -18453,9 +18453,9 @@
         "headline": "Highest temperature in NYC on Sep 28, 2024? 67° or below",
         "description": "If the highest temperature recorded in Central Park, New York for September 28, 2024 as reported by the National Weather Service's Daily Climate Report, is less than 68°, then the market resolves to Yes.",
         "end_date": "2024-09-29T03:59:00Z",
-        "yes_ask": 0.2,
-        "no_ask": 0.98,
-        "liquidity": 1267641
+        "yes_ask": 0.01,
+        "no_ask": 1.0,
+        "liquidity": 443036
     },
     {
         "source": "Kalshi",
@@ -18464,9 +18464,9 @@
         "headline": "Highest temperature in Miami on Sep 28, 2024? 95° or above",
         "description": "If the highest temperature recorded in Miami, FL for September 28, 2024 as reported by the National Weather Service's Daily Climate Report, is greater than 94°, then the market resolves to Yes.",
         "end_date": "2024-09-29T03:59:00Z",
-        "yes_ask": 0.26,
-        "no_ask": 0.99,
-        "liquidity": 52537
+        "yes_ask": 0.03,
+        "no_ask": 1.0,
+        "liquidity": 41740
     },
     {
         "source": "Kalshi",
@@ -18475,9 +18475,9 @@
         "headline": "Highest temperature in Miami on Sep 28, 2024? 93° to 94°",
         "description": "If the highest temperature recorded in Miami, FL for September 28, 2024 as reported by the National Weather Service's Daily Climate Report, is between 93-94°, then the market resolves to Yes.",
         "end_date": "2024-09-29T03:59:00Z",
-        "yes_ask": 0.97,
-        "no_ask": 0.39,
-        "liquidity": 109895
+        "yes_ask": 1.0,
+        "no_ask": 0.030000000000000027,
+        "liquidity": 47579
     },
     {
         "source": "Kalshi",
@@ -18499,7 +18499,7 @@
         "end_date": "2024-09-29T03:59:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 114386
+        "liquidity": 114286
     },
     {
         "source": "Kalshi",
@@ -18530,9 +18530,9 @@
         "headline": "Highest temperature in Chicago on Sep 28, 2024? 75° or above",
         "description": "If the highest temperature recorded at Chicago Midway, IL for September 28, 2024, is greater than 74° according to the NWS's Daily Climate Report, then the market resolves to Yes.",
         "end_date": "2024-09-29T03:59:00Z",
-        "yes_ask": 0.03,
+        "yes_ask": 0.15,
         "no_ask": 1.0,
-        "liquidity": 3530
+        "liquidity": 4613
     },
     {
         "source": "Kalshi",
@@ -18541,9 +18541,9 @@
         "headline": "Highest temperature in Chicago on Sep 28, 2024? 73° to 74°",
         "description": "If the highest temperature recorded at Chicago Midway, IL for September 28, 2024, is between 73-74° according to the NWS's Daily Climate Report, then the market resolves to Yes.",
         "end_date": "2024-09-29T03:59:00Z",
-        "yes_ask": 0.13,
-        "no_ask": 0.96,
-        "liquidity": 295026
+        "yes_ask": 0.37,
+        "no_ask": 0.84,
+        "liquidity": 209116
     },
     {
         "source": "Kalshi",
@@ -18563,9 +18563,9 @@
         "headline": "Highest temperature in Chicago on Sep 28, 2024? 71° to 72°",
         "description": "If the highest temperature recorded at Chicago Midway, IL for September 28, 2024, is between 71-72° according to the NWS's Daily Climate Report, then the market resolves to Yes.",
         "end_date": "2024-09-29T03:59:00Z",
-        "yes_ask": 0.96,
-        "no_ask": 0.15000000000000002,
-        "liquidity": 215830
+        "yes_ask": 0.5,
+        "no_ask": 0.99,
+        "liquidity": 286017
     },
     {
         "source": "Kalshi",
@@ -18576,7 +18576,7 @@
         "end_date": "2024-09-29T03:59:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 165751
+        "liquidity": 166689
     },
     {
         "source": "Kalshi",
@@ -18598,7 +18598,7 @@
         "end_date": "2024-09-29T04:59:00Z",
         "yes_ask": 0.09,
         "no_ask": 1.0,
-        "liquidity": 5298
+        "liquidity": 5548
     },
     {
         "source": "Kalshi",
@@ -18607,9 +18607,9 @@
         "headline": "Highest temperature in Austin on Sep 28, 2024? 97° to 98°",
         "description": "If the highest temperature recorded in Austin Bergstrom for September 28, 2024 as reported by the National Weather Service's Daily Climate Report, is between 97-98°, then the market resolves to Yes.",
         "end_date": "2024-09-29T04:59:00Z",
-        "yes_ask": 0.54,
-        "no_ask": 0.99,
-        "liquidity": 57530
+        "yes_ask": 0.5,
+        "no_ask": 1.0,
+        "liquidity": 48170
     },
     {
         "source": "Kalshi",
@@ -18618,9 +18618,9 @@
         "headline": "Highest temperature in Austin on Sep 28, 2024? 95° to 96°",
         "description": "If the highest temperature recorded in Austin Bergstrom for September 28, 2024 as reported by the National Weather Service's Daily Climate Report, is between 95-96°, then the market resolves to Yes.",
         "end_date": "2024-09-29T04:59:00Z",
-        "yes_ask": 0.96,
-        "no_ask": 0.55,
-        "liquidity": 154040
+        "yes_ask": 1.0,
+        "no_ask": 0.48,
+        "liquidity": 33600
     },
     {
         "source": "Kalshi",
@@ -18629,9 +18629,9 @@
         "headline": "Highest temperature in Austin on Sep 28, 2024? 93° to 94°",
         "description": "If the highest temperature recorded in Austin Bergstrom for September 28, 2024 as reported by the National Weather Service's Daily Climate Report, is between 93-94°, then the market resolves to Yes.",
         "end_date": "2024-09-29T04:59:00Z",
-        "yes_ask": 0.95,
-        "no_ask": 0.97,
-        "liquidity": 251510
+        "yes_ask": 0.01,
+        "no_ask": 1.0,
+        "liquidity": 200786
     },
     {
         "source": "Kalshi",
@@ -18653,7 +18653,7 @@
         "end_date": "2024-09-29T04:59:00Z",
         "yes_ask": 0.01,
         "no_ask": 1.0,
-        "liquidity": 5189
+        "liquidity": 20451
     },
     {
         "source": "Kalshi",
@@ -18717,9 +18717,9 @@
         "headline": "Will the Fed have an emergency meeting? Before Jan 1, 2025",
         "description": "If the Federal Open market Committee has an unscheduled meeting before Jan 1, 2025, then the market resolves to Yes.",
         "end_date": "2025-01-01T04:59:00Z",
-        "yes_ask": 0.15,
+        "yes_ask": 0.16,
         "no_ask": 0.95,
-        "liquidity": 2459030
+        "liquidity": 2459454
     },
     {
         "source": "Kalshi",
@@ -18840,6 +18840,6 @@
         "end_date": "2025-01-01T04:59:00Z",
         "yes_ask": 0.05,
         "no_ask": 0.97,
-        "liquidity": 606698
+        "liquidity": 804698
     }
 ]
