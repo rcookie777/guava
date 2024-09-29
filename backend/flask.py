@@ -11,8 +11,11 @@ from PIL import Image
 from flask import Flask, jsonify
 import threading
 import time
+from dotenv import load_dotenv
 
 # ----------------------- Configuration Management -----------------------
+
+load_dotenv()
 
 def load_config(config_path='config.json'):
     """
@@ -33,7 +36,7 @@ def load_config(config_path='config.json'):
 config = load_config()
 
 # Extract configuration values
-OPENAI_API_KEY = config.get("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 YOUTUBE_URL = config.get("YOUTUBE_URL")
 
 # Validate configuration
