@@ -8,6 +8,8 @@ from langchain_google_community import GoogleSearchAPIWrapper
 import http
 import urllib
 from langchain_core.tools import tool
+
+
 MASTER_PROMPT = """
     You are the master agent responsible for researching headlines and market data to inform predictions for platforms like Polymarket. Your goal is to gather relevant information and analyze trends to provide insights for prediction market outcomes.
     Capabilities:
@@ -259,26 +261,26 @@ if __name__ == "__main__":
     #         "published_at": "2024-09-29T00:11:57+00:00",
     #     },
     # ]
-    # master_response = master.use_groq(system_prompt=MASTER_PROMPT,prompt=polymarket_market['headline'])
-    # print("MASTER RESPONSE:" + master_response)
-    # task_details, tools = master.extract_task_and_tools(master_response)
-    # sub_agents = []
-    # print("Number of tasks generated: ", len(task_details))
+    master_response = master.use_groq(system_prompt=MASTER_PROMPT,prompt=polymarket_market['headline'])
+    print("MASTER RESPONSE:" + master_response)
+    task_details, tools = master.extract_task_and_tools(master_response)
+    sub_agents = []
+    print("Number of tasks generated: ", len(task_details))
 
-    # # for i, task in enumerate(task_details):
-    # #     print(f"Task {i+1}: {task['description']}")
-    # #     print(f"Number of tools for Task {i+1}: {len(task['tools'])}")
-    # #     print(f"Tools for Task {i+1}: {task['tools']}")
-    # for task in task_details:
-    #     description = task['description']
-    #     task_tools = task['tools']
-    #     agent = Agent(description, task_tools, agent_type="sub-agent", llm=groq_client)
-    #     sub_agents.append(agent)
+    # for i, task in enumerate(task_details):
+    #     print(f"Task {i+1}: {task['description']}")
+    #     print(f"Number of tools for Task {i+1}: {len(task['tools'])}")
+    #     print(f"Tools for Task {i+1}: {task['tools']}")
+    for task in task_details:
+        description = task['description']
+        task_tools = task['tools']
+        agent = Agent(description, task_tools, agent_type="sub-agent", llm=groq_client)
+        sub_agents.append(agent)
 
 
-    task_description = "Search for recent political polls and trends in Pennsylvania."
+    # task_description = "Search for recent political polls and trends in Pennsylvania."
 
-    # Call the function to generate the search query
-    search_query = master.generate_search_query(task_description)
+    # # Call the function to generate the search query
+    # search_query = master.generate_search_query(task_description)
 
-    print("Generated Search Query:", search_query)
+    # print("Generated Search Query:", search_query)
