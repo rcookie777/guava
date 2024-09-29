@@ -8,42 +8,51 @@ from langchain_google_community import GoogleSearchAPIWrapper
 import http
 import urllib
 from langchain_core.tools import tool
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from peft import PeftModel
+import torch
+import http
+import urllib
+from langchain_core.tools import tool
 
+MASTER_PROMPT= """You are the master agent responsible for researching headlines and market data to inform predictions for platforms like Polymarket. Your goal is to gather relevant information and analyze trends to provide insights for prediction market outcomes.
+  Capabilities:
+  - Spawn 2 sub-agents to assist in research tasks
+  - Use search() tool to find relevant news and information
+  - Use get_order_data() tool to retrieve market order data
+  Task Management:
+  1. Assess the given prediction market question or topic
+  2. Determine two key areas requiring research
+  3. Spawn two sub-agents, assigning one specific research task to each
+  4. Analyze information gathered by sub-agents
+  5. Synthesize findings into a concise prediction report
 
-MASTER_PROMPT = """
-    You are the master agent responsible for researching headlines and market data to inform predictions for platforms like Polymarket. Your goal is to gather relevant information and analyze trends to provide insights for prediction market outcomes.
-    Capabilities:
-    Spawn 2 sub-agents to assist in a research task.
-    Use search() tool to find relevant news and information
-    Use get_order_data() tool to retrieve market order data
-    Task Management:
-    Assess the given prediction market question or topic
-    Determine key areas requiring research
-    Spawn sub-agents as needed, assigning specific research tasks
-    Analyze information gathered by sub-agents
-    Synthesize findings into a concise prediction report
-    Sub-Agent Spawning (Only spawn 2 tasks at a time):
-    To spawn a sub-agent, use the following format:
-    text
-    Respond in JSON with no spacing.
-    OUTPUT FORMAT:
-    {
-        tasks: [
-            {"task": "Detailed description of the research task", 
-            "tools": ["List of tools the agent can use e.g. search(), get_order_data()"]}
-        ]
-    }
+  Sub-Agent Spawning:
+  You must always spawn exactly 2 sub-agents. Use the following format to define their tasks:
 
-    EXAMPLE OUTPUT:
-    {
-        tasks: [
-            {"task": "Search for recent political polls and trends in Pennsylvania.", 
-            "tools": ["search()"]}, 
-            {"task": "Retrieve the latest market order data related to the Pennsylvania election.", 
-            "tools": ["get_order_data()"]}
-        ]
-    }
-    """
+  Respond in JSON with no spacing. Only respond in the valid format below.
+
+  OUTPUT FORMAT:
+  {
+    \"tasks\": [
+      {\"task\": \"Detailed description of the first research task\", 
+      \"tools\": [\"List of tools the first agent can use e.g. search(), get_order_data()\"]},
+      {\"task\": \"Detailed description of the second research task\", 
+      \"tools\": [\"List of tools the second agent can use e.g. search(), get_order_data()\"]}
+    ]
+  }
+
+  EXAMPLE OUTPUT:
+  {
+    \"tasks\": [
+      {\"task\": \"Search for recent political polls and trends in Pennsylvania.\", 
+      \"tools\": [\"search()\"]},
+      {\"task\": \"Retrieve the latest market order data related to the Pennsylvania election.\", 
+      \"tools\": [\"get_order_data()\"]}
+    ]
+  }"
+}
+"""
 
 class Agent:
     def __init__(
@@ -78,6 +87,47 @@ class Agent:
                 pass
         self.messages.append({"role": "agent", "content": output})
         return output
+
+    def use_lora(self, prompt):
+        # Load the base model and tokenizer for LoRA
+        model_name = "meta-llama/Llama-2-7b-hf"
+        tokenizer = AutoTokenizer.from_pretrained(model_name)
+        model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16)
+
+        # Load LoRA fine-tuned model
+        peft_model_path = "fine_tuned"  # Replace with the path to your LoRA model files
+        lora_model = PeftModel.from_pretrained(model, peft_model_path)
+
+        # Move the model to GPU if available
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        lora_model.to(device)
+
+        # Tokenize the prompt
+        inputs = tokenizer(prompt, return_tensors="pt").to(device)
+
+        # Generate a response
+        output = lora_model.generate(
+            inputs["input_ids"],
+            max_new_tokens=150,
+            do_sample=True,
+            temperature=0.5,  # Adjust this as needed
+            top_p=0.9,
+        )
+
+        # Decode the generated text
+        generated_text = tokenizer.decode(output[0], skip_special_tokens=True).strip()
+
+        # Remove the original prompt from the generated text
+        generated_text = generated_text.replace(prompt, "").strip()
+
+
+
+        # Ensure the output starts with "Answer:" as required
+        if not generated_text.startswith("Answer:"):
+            generated_text = "Answer: " + generated_text
+        # Return the generated text
+        return generated_text
+
 
     def google_search(self, search_query):
         search = GoogleSearchAPIWrapper(
@@ -127,7 +177,7 @@ Only provide a single-line search query based on the user's task description. Do
 
     def extract_task_and_tools(self, response_content):
         response_json = json.loads(response_content)
-
+        
         tasks = response_json.get("tasks", [])
         tools = response_json.get("tools", [])
 
@@ -255,8 +305,8 @@ if __name__ == "__main__":
     master = Agent(0, "", [], llm=groq_client, agent_type='master', status='working')
 
     # Get the initial response from the master agent
-    master_response = master.use_groq(system_prompt=MASTER_PROMPT, prompt=polymarket_market['headline'])
-    print("MASTER RESPONSE:" + master_response)
+    master_response = master.use_lora(prompt=polymarket_market['headline'])
+    print(master_response)
     task_details, tools = master.extract_task_and_tools(master_response)
     sub_agents = {}
 
@@ -281,13 +331,11 @@ if __name__ == "__main__":
     for agent_id, agent in sub_agents.items():
         combined_messages.extend(agent.messages)
 
-    # Update master agent's message history with sub-agent messages
     master.messages.extend(combined_messages)
 
-    # Final analysis by master agent
     MASTER_ANALYSIS_PROMPT = """
-Based on the information gathered by your sub-agents, analyze the data and provide a concise prediction report for the given market question.
-"""
+    Based on the information gathered by your sub-agents, analyze the data and provide a concise prediction report for the given market question.
+    """
 
     final_response = master.use_groq(
         system_prompt=MASTER_ANALYSIS_PROMPT,

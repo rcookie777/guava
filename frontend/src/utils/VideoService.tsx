@@ -28,7 +28,6 @@ export const getHeadlines = async () => {
       throw new Error('Failed to fetch headlines');
     }
     const headlines = await response.json();
-    console.log(headlines);
     return headlines;
   } catch (error) {
     console.error('Error fetching headlines:', error);
