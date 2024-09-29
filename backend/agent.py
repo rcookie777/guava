@@ -48,83 +48,82 @@ MASTER_PROMPT = """
 class Agent:
     def __init__(
         self,
+        id,
         task,
         tools,
         agent_type,
         llm,
+        status,
     ):
+        self.id = id
         self.task = task
         self.tools = tools
         self.llm = groq_client
+        self.status = status
+        self.messages = []
         
         # print("RUNNING AGENT TASK: " + str(self.task) + "TOOLS: " + str(self.tools))
+    def execute_task(self):
+        output = ""
         for tool in self.tools:
             if tool == "search()":
+                print(f"AGENT {self.id} is performing a search.")
+                search_query = self.generate_search_query(self.task)
+                print(f"AGENT {self.id} is searching for: {search_query}")
+                search_results = self.google_search(search_query)
+                print(f"AGENT {self.id} found {search_results}")
+                output += f"Search Results for '{search_query}':\n{search_results}\n"
+            elif tool == "get_order_data()":
+                output += "Order data retrieved.\n"
                 pass
-            if tool == "get_orderbook()":
-                pass
+        self.messages.append({"role": "agent", "content": output})
+        return output
 
-    def google_search(self,search: GoogleSearchAPIWrapper):
+    def google_search(self, search_query):
+        search = GoogleSearchAPIWrapper(
+            google_api_key=os.getenv('GOOGLE_API_KEY'),
+            google_cse_id=os.getenv('GOOGLE_CSE_ID')
+        )
         tool = Tool(
             name="google_search",
             description="Search Google for recent results.",
             func=search.run,
         )
+        result = tool.invoke(search_query, k=5)
+        self.messages.append({"role": "tool", "content": f"Search results for '{search_query}': {result}"})
+        return result
+                           
+    def get_status(self):
+        return self.status
 
     def use_groq(self, system_prompt, prompt):
+        self.messages.append({"role": "system", "content": system_prompt})
+        self.messages.append({"role": "user", "content": prompt})
         chat_completion = self.llm.chat.completions.create(
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": prompt},
-            ],
-            model="llama3-groq-70b-8192-tool-use-preview",
-            # functions=[
-            #     {
-            #         "name": "get_weather",
-            #         "description": "Get the current weather for a location",
-            #         "parameters": {
-            #             "type": "object",
-            #             "properties": {
-            #                 "location": {
-            #                     "type": "string",
-            #                     "description": "The city and state, e.g. San Francisco, CA"
-            #                 },
-            #                 "unit": {
-            #                     "type": "string",
-            #                     "enum": ["celsius", "fahrenheit"],
-            #                     "description": "The unit of temperature to use. Defaults to fahrenheit."
-            #                 }
-            #             },
-            #             "required": ["location"]
-            #         }
-            #     }
-            # ],
-            tool_choice="auto",
+            messages=self.messages,
+            model="llama-3.1-8b-instant",
             max_tokens=4096,
         )
-
-        return chat_completion.choices[0].message.content
+        response = chat_completion.choices[0].message.content
+        self.messages.append({"role": "assistant", "content": response})
+        return response
     
 
     def generate_search_query(self, task_description):
-        # Define a system prompt to instruct the LLM to generate the best search query
         system_prompt = """
-        You are an expert search query generator. Your task is to generate the most effective search query for finding information online.
-        Only provide a single-line search query based on the user's task description. Do not provide explanations, just the search query.
-        """
-
-        # Call the LLM to generate the search query
+You are an expert search query generator. Your task is to generate the most effective search query for finding information online.
+Only provide a single-line search query based on the user's task description. Do not provide explanations, just the search query. NO QUOTES.
+"""
+        self.messages.append({"role": "system", "content": system_prompt})
+        self.messages.append({"role": "user", "content": task_description})
         query = self.llm.chat.completions.create(
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": task_description},
-            ],
-            model="llama3-groq-70b-8192-tool-use-preview",
-            max_tokens=50,  # Limit the token size to ensure concise queries
+            messages=self.messages,
+            model="llama-3.1-8b-instant",
+            max_tokens=50,
         )
-
-        # Return the search query generated by the LLM
-        return query.choices[0].message.content.strip()
+        search_query = query.choices[0].message.content.strip()
+        self.messages.append({"role": "assistant", "content": search_query})
+        return search_query
 
     def extract_task_and_tools(self, response_content):
         response_json = json.loads(response_content)
@@ -145,14 +144,6 @@ class Agent:
 
         return task_details, tools
 
-    def place_trade(self):
-        pass
-
-    def get_prediction_market_data(self):
-        pass
-
-    def researcher(self):
-        pass
 
     def get_news_headlines(self, keywords=None, countries=None, categories=None, limit=10):
         conn = http.client.HTTPConnection("api.mediastack.com")
@@ -206,8 +197,8 @@ if __name__ == "__main__":
         "liquidity": 35388.2459,
     }
 
-    master = Agent("", "",llm=groq_client,agent_type='master')
-    # search = GoogleSearchAPIWrapper(google_api_key=os.getenv('GOOGLE_API_KEY'),google_cse_id=os.getenv('GOOGLE_CSE_ID'))
+    master = Agent(0,"", [], llm=groq_client,agent_type='master',status='working')
+    
     # master.google_search(search)
     # headlines = [
     #     {
@@ -261,26 +252,46 @@ if __name__ == "__main__":
     #         "published_at": "2024-09-29T00:11:57+00:00",
     #     },
     # ]
-    master_response = master.use_groq(system_prompt=MASTER_PROMPT,prompt=polymarket_market['headline'])
+    master = Agent(0, "", [], llm=groq_client, agent_type='master', status='working')
+
+    # Get the initial response from the master agent
+    master_response = master.use_groq(system_prompt=MASTER_PROMPT, prompt=polymarket_market['headline'])
     print("MASTER RESPONSE:" + master_response)
     task_details, tools = master.extract_task_and_tools(master_response)
-    sub_agents = []
-    print("Number of tasks generated: ", len(task_details))
+    sub_agents = {}
 
-    # for i, task in enumerate(task_details):
-    #     print(f"Task {i+1}: {task['description']}")
-    #     print(f"Number of tools for Task {i+1}: {len(task['tools'])}")
-    #     print(f"Tools for Task {i+1}: {task['tools']}")
-    for task in task_details:
+    print("Number of tasks generated:", len(task_details))
+
+    for i, task in enumerate(task_details):
         description = task['description']
         task_tools = task['tools']
-        agent = Agent(description, task_tools, agent_type="sub-agent", llm=groq_client)
-        sub_agents.append(agent)
+        agent_id = i + 1  
+        agent = Agent(agent_id, description, task_tools, agent_type="sub-agent", llm=groq_client, status='working')
+        sub_agents[agent_id] = agent
 
+    sub_agent_outputs = {}
+    for agent_id, agent in sub_agents.items():
+        print(f"Running Sub-Agent {agent_id}: {agent.task}")
+        output = agent.execute_task()  
+        sub_agent_outputs[agent_id] = output
+        agent.status = 'completed'
+        print(f"Sub-Agent {agent_id} completed with output: {output}")
 
-    # task_description = "Search for recent political polls and trends in Pennsylvania."
+    combined_messages = []
+    for agent_id, agent in sub_agents.items():
+        combined_messages.extend(agent.messages)
 
-    # # Call the function to generate the search query
-    # search_query = master.generate_search_query(task_description)
+    # Update master agent's message history with sub-agent messages
+    master.messages.extend(combined_messages)
 
-    # print("Generated Search Query:", search_query)
+    # Final analysis by master agent
+    MASTER_ANALYSIS_PROMPT = """
+Based on the information gathered by your sub-agents, analyze the data and provide a concise prediction report for the given market question.
+"""
+
+    final_response = master.use_groq(
+        system_prompt=MASTER_ANALYSIS_PROMPT,
+        prompt=""
+    )
+    print("\nFinal Analysis by Master Agent:")
+    print(final_response)
