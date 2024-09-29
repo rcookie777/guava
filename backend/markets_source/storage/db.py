@@ -10,24 +10,41 @@ class VectorDatabase:
             tlsCertificateKeyFile=tls_cert_file
         )
         self.db = self.client['quavadb']
-        self.collection = self.db['vectorCollection']
+        self.collection = self.db['pussy']
 
-    def add_document(self, name, embedding):
-        if len(embedding) != 1536:
-            raise ValueError("Embedding must be 1536-dimensional.")
-        
-        document = {
-            "name": name,
-            "embedding": {
-                "type": "vector",
-                "path": "embedding",
-                "numDimensions": 1536,
-                "similarity": "cosine",
-                "values": embedding
-            }
-        }
-        insert_result = self.collection.insert_one(document)
-        return insert_result.inserted_id
+    def add_documents(self, documents):
+        """
+        Add multiple documents with embeddings to the MongoDB collection.
+
+        Args:
+        - documents: A list of dictionaries, where each dictionary contains 'name' and 'embedding'.
+
+        Returns:
+        - A list of inserted document IDs.
+        """
+        # Ensure that each embedding in the array has the correct dimensionality
+        for doc in documents:
+            if len(doc['embedding']) != 4096:
+                raise ValueError("Each embedding must be 4096-dimensional.")
+
+        # Create an array of documents to insert into MongoDB
+        mongo_documents = []
+        for doc in documents:
+            mongo_documents.append({
+                "name": doc['name'],
+                "embedding": {
+                    "type": "vector",
+                    "path": "embedding",
+                    "numDimensions": 4096,
+                    "similarity": "cosine",
+                    "values": doc['embedding']
+                }
+            })
+
+        # Use insert_many to insert all documents at once
+        insert_result = self.collection.insert_many(mongo_documents)
+        return insert_result.inserted_ids
+
 
     def read_document(self, doc_id=None, name=None):
         query = {}
@@ -43,7 +60,7 @@ class VectorDatabase:
     def find_similar_vectors(self, target_embedding):
         """Find documents with embeddings similar to the target using a brute-force approach."""
         # Ensure the target embedding is 1536-dimensional
-        if len(target_embedding) != 1536:
+        if len(target_embedding) != 4096:
             raise ValueError("Target embedding must be 1536-dimensional.")
 
         # Retrieve all documents from the collection

@@ -11,6 +11,8 @@ from sentence_transformers import SentenceTransformer
 import torch
 import concurrent.futures
 import gc
+from storage.db import VectorDatabase 
+
 
 # Clear CUDA cache
 torch.cuda.empty_cache()
@@ -41,6 +43,11 @@ class EventMatcher:
         self.embeddings = {}
         self.data = {}
         self.redis_client = None
+
+        # Initialize the MongoDB vector database
+        mongo_uri = os.getenv("MONGO_URI")  # MongoDB URI
+        mongo_cert_file = os.getenv("MONGO_CERT_FILE")  # MongoDB certificate file path
+        self.vector_db = VectorDatabase(mongo_uri, mongo_cert_file)
 
         # Load NV-Embed-v2 model with Sentence-Transformers
         model_name = 'nvidia/NV-Embed-v2'  # Ensure this is the correct model name
@@ -88,21 +95,23 @@ class EventMatcher:
 
     async def generate_embeddings(self, source_name, data):
         self.data[source_name] = data
-        batch_size = 8 # Adjust based on your GPU memory
+        batch_size = 8  # Adjust based on your GPU memory
         descriptions = [self.sanitize_sentence(item['headline']) for item in data]
         market_ids = [item['market_id'] for item in data]
         cache_keys = [f"{source_name}:embedding:{market_id}" for market_id in market_ids]
         cached_embeddings = await self.redis_client.mget(*cache_keys)
 
+        # Determine which embeddings need to be fetched
         to_fetch = [i for i, emb in enumerate(cached_embeddings) if emb is None]
-        fetched_embeddings = []
+        fetched_embeddings = [] 
 
+        # Ensure we only fetch if there are embeddings to fetch
         if not to_fetch:
             print(f"All embeddings for '{source_name}' are already cached.")
             self.embeddings[source_name] = np.array([json.loads(emb) for emb in cached_embeddings if isinstance(emb, str)])
             return
 
-        # Prepare texts with EOS tokens
+        # Prepare texts for embeddings
         texts_to_encode = [descriptions[i] for i in to_fetch]
 
         # Encode queries in batches using ThreadPoolExecutor to prevent blocking
@@ -121,13 +130,22 @@ class EventMatcher:
             )
             fetched_embeddings.extend(batch_embeddings)
 
-        # Cache embeddings in Redis
+        # Cache embeddings in Redis and send them to MongoDB
         cache_dict = {}
         for j, index in enumerate(to_fetch):
             cache_key = cache_keys[index]
             emb = fetched_embeddings[j]
             cache_dict[cache_key] = json.dumps(emb.tolist())
 
+            # Insert embedding into MongoDB (sending embedding to MongoDB vector DB)
+            market_id = market_ids[index]  # This line will now only run if there are embeddings to fetch
+            try:
+                self.vector_db.add_document(f"{source_name}_{market_id}", emb.tolist())
+                print(f"Inserted embedding for '{source_name}' market_id: {market_id} into MongoDB.")
+            except Exception as e:
+                print(f"Failed to insert embedding for '{source_name}' market_id: {market_id} into MongoDB: {e}")
+
+        # Cache the newly fetched embeddings
         if cache_dict:
             try:
                 await self.redis_client.mset(cache_dict)

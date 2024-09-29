@@ -51,9 +51,9 @@ async def main():
         print(f"Failed to save events: {e}")
         return
 
-''' # Proceed with event matching if necessary
+# Proceed with event matching if necessary
     matcher = EventMatcher()
-    await matcher.match_events()'''
+    await matcher.match_events()
 
 if __name__ == "__main__":
     asyncio.run(main())
