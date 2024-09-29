@@ -1,1 +1,5 @@
 ssh -J guest@146.152.232.8 ubuntu@100.82.165.155
+
+docker pull redis:latest
+
+docker run -d --name my-redis -p 6379:6379 redis:latest
