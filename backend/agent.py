@@ -194,7 +194,7 @@ if __name__ == "__main__":
 
     polymarket_market = {
         "source": "Polymarket",
-        "market_id": "0x1f5f0d3a3662423d9f24d46b001f1de4e4dcd4f3c0e200d45c1c23e87b503c29",
+        "market_id": "0x13137815713e2549030a2cd576f14c4e0442a7794782bc0ecd392b2090edfc1c",
         "status": "Active",
         "headline": "Will the Democratic candidate win Pennsylvania by 0.5%-1%?",
         "description": 'This market will resolve to "Yes” if the Democratic Party candidate wins the popular vote in Pennsylvania in the 2024 U.S. Presidential Election by between 0.5% (inclusive) and 1% (exclusive) or more when compared with the second place candidate. Otherwise, this market will resolve to "No".\n\nFor the purpose of resolving this market, the \'margin of victory\' is defined as the absolute difference between the percentages of votes received by the Democratic Party candidate and the second-place candidate. Percentages of the votes received by each party will be determined by dividing the total number of votes each of the top two candidates receives by the sum of all votes cast in Pennsylvania for the 2024 U.S. Presidential Election.\n\nThis market will resolve based off the official vote count once Pennsylvania has certified the vote. \n\nIf a recount is initiated before certification, the market will remain open until the recount is completed and the vote is certified. If a recount occurs after certification, the recount will not be considered.',

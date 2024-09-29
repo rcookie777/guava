@@ -12,41 +12,26 @@ from flask import Flask, jsonify
 import threading
 import time
 from dotenv import load_dotenv
+import openai
+
+
+
 
 # ----------------------- Configuration Management -----------------------
 
 load_dotenv()
 
-def load_config(config_path='config.json'):
-    """
-    Loads the configuration from a JSON file.
-    """
-    try:
-        with open(config_path, 'r') as file:
-            config = json.load(file)
-        return config
-    except FileNotFoundError:
-        print(f"Configuration file '{config_path}' not found.")
-        sys.exit(1)
-    except json.JSONDecodeError as e:
-        print(f"Error decoding JSON from the configuration file: {e}")
-        sys.exit(1)
 
-# Load configuration
-config = load_config()
+
 
 # Extract configuration values
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-YOUTUBE_URL = config.get("YOUTUBE_URL")
 
 # Validate configuration
 if not OPENAI_API_KEY:
     print("OpenAI API key not found in the configuration file.")
     sys.exit(1)
 
-if not YOUTUBE_URL:
-    print("YouTube URL not found in the configuration file.")
-    sys.exit(1)
 
 # ----------------------- OpenAI Client Initialization -----------------------
 
@@ -324,6 +309,10 @@ def process_audio_stream(audio_stream_url, video_stream_url, stop_event):
 
 # ----------------------- Flask App Initialization -----------------------
 
+from flask import Flask, jsonify, request  # Added request for getting query parameters
+
+# ----------------------- Flask App Initialization -----------------------
+
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -331,6 +320,10 @@ CORS(app)
 
 background_thread = None
 stop_event = threading.Event()
+
+@app.route('/',methods=['GET'])
+def home():
+    return str(200)
 
 @app.route('/get_headlines', methods=['GET'])
 def get_headlines():
@@ -341,7 +334,13 @@ def get_headlines():
 def start_processing():
     global background_thread, stop_event
 
-    # Check if the processing is already running
+    # Get YouTube URL from query parameter
+    youtube_url = request.args.get('youtube_url')
+
+    # Validate YouTube URL
+    if not youtube_url:
+        return jsonify({'error': 'YouTube URL is required'}), 400
+    
     if background_thread and background_thread.is_alive():
         return jsonify({'status': 'Processing already running'}), 400
 
@@ -349,7 +348,7 @@ def start_processing():
     stop_event = threading.Event()
 
     # Get the media stream URLs
-    audio_url, video_url = get_media_stream_urls(YOUTUBE_URL)
+    audio_url, video_url = get_media_stream_urls(youtube_url)
 
     # Start the background thread
     background_thread = threading.Thread(target=process_audio_stream, args=(audio_url, video_url, stop_event))
@@ -364,4 +363,14 @@ def start_processing():
 # ----------------------- Main Execution -----------------------
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get("PORT", 8080)))
+
+
+
+# gcloud run deploy api \
+#   --image gcr.io/PROJECT_ID/guava \
+#   --platform managed \
+#   --region us-central1 \
+#   --allow-unauthenticated \
+#   --update-secrets OPENAI_API_KEY=OPENAI_API_KEY:latest \
+#   --max-instances 1

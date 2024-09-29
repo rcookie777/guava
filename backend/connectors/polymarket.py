@@ -64,13 +64,13 @@ class PolyMarket:
         )
 
     def get_orderbook(self, token_id: str, ) -> OrderBookSummary:
-        market = self.get_market(token_id)
-        print(market)
-        return self.client.get_order_book(market['id'])
+        return self.client.get_order_book(token_id)
     
     def get_market(self, token_id: str):
+        print(token_id)
         params = {"clob_token_ids": token_id}
         res = httpx.get(self.gamma_markets_endpoint, params=params)
+        print(res)
         if res.status_code == 200:
             data = res.json()
             market = data[0]
@@ -101,7 +101,7 @@ class PolyMarket:
 
 if __name__ == "__main__":
     p = PolyMarket()
-    m = p.get_market('1f5f0d3a3662423d9f24d46b001f1de4e4dcd4f3c0e200d45c1c23e87b503c29')
+    m = p.get_market('5f0de9f7ef85003356acb6117d235a4fa45ed5718d2a467ea7015cc92ae68713')
     print(m)
     # p.get_orderbook('69d49cd801c35981676c8c991407623a7add2a0c1a007f28cdccfdf5e74da19a')
 
