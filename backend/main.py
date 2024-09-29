@@ -22,6 +22,10 @@ news_items = [
     NewsItem(title='Economic Outlook for Q4', url='https://news.example.com/q4-outlook'),
 ]
 
+@app.route('/')
+def index():
+    return "Hello, World!"
+
 @app.route('/api/data', methods=['GET'])
 def get_data():
     return jsonify([item.to_dict() for item in data_items])

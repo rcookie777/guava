@@ -2140,9 +2140,9 @@
         "headline": "Fed funds rate in Mar 2025? 3.75%",
         "description": "If the upper bound of the target federal funds rate published on the Federal Reserve's official website is greater than 3.75% following the Federal Reserve's Mar 19, 2025 meeting, then the market resolves to Yes.",
         "end_date": "2025-03-19T17:55:00Z",
-        "yes_ask": 0.99,
-        "no_ask": 1.0,
-        "liquidity": 198
+        "yes_ask": 1.0,
+        "no_ask": 0.99,
+        "liquidity": 4950
     },
     {
         "source": "Kalshi",
@@ -4626,7 +4626,7 @@
         "headline": "How high will Bitcoin get this year? $100,000",
         "description": "If the price of Bitcoin is Above 99999.99 by Dec 31, 2024, then the market resolves to Yes.",
         "end_date": "2025-01-01T00:00:00Z",
-        "yes_ask": 0.11,
+        "yes_ask": 0.1,
         "no_ask": 0.91,
         "liquidity": 855970
     },
@@ -15462,8 +15462,8 @@
         "description": "If the total precipitation at Central Park, New York City in Sep 2024 is strictly greater than 4 inches, then the market resolves to Yes.",
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 0.04,
-        "no_ask": 0.99,
-        "liquidity": 6702
+        "no_ask": 1.0,
+        "liquidity": 6405
     },
     {
         "source": "Kalshi",
@@ -15473,8 +15473,8 @@
         "description": "If the total precipitation at Central Park, New York City in Sep 2024 is strictly greater than 3.5 inches, then the market resolves to Yes.",
         "end_date": "2024-10-01T03:59:00Z",
         "yes_ask": 0.05,
-        "no_ask": 1.0,
-        "liquidity": 6227
+        "no_ask": 0.99,
+        "liquidity": 6524
     },
     {
         "source": "Kalshi",
@@ -17540,7 +17540,7 @@
         "headline": "\"Megalopolis\" Rotten Tomatoes score? Above 50",
         "description": "If Megalopolis has a Tomatometer score of above 50 on Sep 30, 2024 at 10:00AM ET, then the market resolves to Yes.",
         "end_date": "2024-12-31T15:00:00Z",
-        "yes_ask": 0.1,
+        "yes_ask": 0.08,
         "no_ask": 0.97,
         "liquidity": 1381275
     },

@@ -5,7 +5,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import normalize
 import redis.asyncio as redis  # Updated import
 import os
-from dotenv import load_dotenv
 import re
 from sentence_transformers import SentenceTransformer
 import torch
@@ -18,7 +17,6 @@ print(f"Using device: {device}")
 if torch.cuda.is_available():
     torch.cuda.set_per_process_memory_fraction(0.8, device=0)  # Limit to 80% of GPU memory
 
-load_dotenv()
 
 class EventMatcher:
     def __init__(self):
@@ -170,7 +168,6 @@ class EventMatcher:
 
     async def match_events(self):
         print("Matching events")
-        await self.initialize_redis()
         for source_name, file_path in self.data_sources.items():
             data = self.load_json(file_path)
             await self.generate_embeddings(source_name, data)
