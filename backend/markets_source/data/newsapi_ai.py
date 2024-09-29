@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 
-def get_articles_by_keyword(keyword, max_items=500, save_to_csv=False, csv_filename=None):
+def get_articles_by_keyword(keyword, max_items=100, save_to_csv=False, csv_filename=None):
     """
     Fetches articles related to a specific keyword using the EventRegistry API and returns the results as a pandas DataFrame.
     """
@@ -120,11 +120,12 @@ def main(keyword):
     It returns two DataFrames: one for articles and one for events.
     """
     # Fetch articles related to the keyword
-    articles_df = get_articles_by_keyword(keyword, max_items=50, save_to_csv=False, csv_filename=f'{keyword}.csv')
+    articles_df = get_articles_by_keyword(keyword, max_items=100, save_to_csv=False, csv_filename=f'{keyword}.csv')
 
     # Get the concept URI for the keyword to fetch related events
     concept_uri = get_concept_uri(keyword)
-    
+    concept_uri = False    
+
     if concept_uri:
         events_df = get_events_by_concept(concept_uri, max_items=50, save_to_csv=False, csv_filename=f'{keyword}.csv')
     else:
@@ -139,7 +140,5 @@ if __name__ == "__main__":
     articles_df, events_df = main(user_input)
     
     print("Articles DataFrame:")
-    print(articles_df.head())
+    print(articles_df)
 
-    print("\nEvents DataFrame:")
-    print(events_df.head())

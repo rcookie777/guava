@@ -5,9 +5,13 @@ from dotenv import load_dotenv
 import requests
 from langchain_core.tools import Tool
 from langchain_google_community import GoogleSearchAPIWrapper
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from peft import PeftModel
+import torch
 import http
 import urllib
 from langchain_core.tools import tool
+
 MASTER_PROMPT = """
     You are the master agent responsible for researching headlines and market data to inform predictions for platforms like Polymarket. Your goal is to gather relevant information and analyze trends to provide insights for prediction market outcomes.
     Capabilities:
@@ -103,6 +107,47 @@ class Agent:
 
         return chat_completion.choices[0].message.content
     
+    # Function to use LoRA fine-tuned model for text generation
+    def use_lora(self, prompt):
+        # Load the base model and tokenizer for LoRA
+        model_name = "meta-llama/Llama-2-7b-hf"
+        tokenizer = AutoTokenizer.from_pretrained(model_name)
+        model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16)
+
+        # Load LoRA fine-tuned model
+        peft_model_path = "fine_tuned"  # Replace with the path to your LoRA model files
+        lora_model = PeftModel.from_pretrained(model, peft_model_path)
+
+        # Move the model to GPU if available
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        lora_model.to(device)
+
+        # Tokenize the prompt
+        inputs = tokenizer(prompt, return_tensors="pt").to(device)
+
+        # Generate a response
+        output = lora_model.generate(
+            inputs["input_ids"],
+            max_new_tokens=150,
+            do_sample=True,
+            temperature=0.5,  # Adjust this as needed
+            top_p=0.9,
+        )
+
+        # Decode the generated text
+        generated_text = tokenizer.decode(output[0], skip_special_tokens=True).strip()
+
+        # Remove the original prompt from the generated text
+        generated_text = generated_text.replace(prompt, "").strip()
+
+
+
+        # Ensure the output starts with "Answer:" as required
+        if not generated_text.startswith("Answer:"):
+            generated_text = "Answer: " + generated_text
+        # Return the generated text
+        return generated_text
+
 
     def generate_search_query(self, task_description):
         # Define a system prompt to instruct the LLM to generate the best search query
@@ -205,6 +250,9 @@ if __name__ == "__main__":
     }
 
     master = Agent("", "",llm=groq_client,agent_type='master')
+    prompt = "Can you explain the concept of monopsony in economics?"
+    response = master.use_lora(prompt)
+    print(response)
     # search = GoogleSearchAPIWrapper(google_api_key=os.getenv('GOOGLE_API_KEY'),google_cse_id=os.getenv('GOOGLE_CSE_ID'))
     # master.google_search(search)
     # headlines = [
