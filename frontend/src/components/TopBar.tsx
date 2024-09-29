@@ -21,7 +21,6 @@ const CommandInput = styled.input`
 export const TopBar: React.FC = () => {
   return (
     <TopBarContainer>
-      <CommandInput placeholder="Enter command..." />
     </TopBarContainer>
   );
 };

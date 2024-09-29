@@ -352,18 +352,18 @@ def process_audio_stream(audio_stream_url, video_stream_url, stop_event):
 
 def run_agent_market_analysis(market_header):
     global agent_status
-
+    print("RUNNING MARKET ANALYSIS")
     groq_client = Groq(
         api_key=os.getenv("GROQ_API_KEY"),
     )
     agent_status["state"] = "running"
     agent_status["progress"] = "Starting agent"
-
+    
     try:
         master = Agent(0, "", [], llm=groq_client, agent_type='master', status='working')
-        
         # Get initial response from the master agent
         master_response = master.use_groq(system_prompt=MASTER_PROMPT, prompt=market_header)
+        print('got master ' + master_response)
         task_details, tools = master.extract_task_and_tools(master_response)
         # Spawn sub-agents
         sub_agents = {}
@@ -416,12 +416,13 @@ def get_headlines():
     
 @app.route('/agent_status', methods=['GET'])
 def get_agent_status():
+    print(agent_status)
     return jsonify(agent_status)
 
 @app.route('/start_agent', methods=['POST'])
 def start_agent():
     global background_thread, stop_event, agent_status
-    
+    print("STARTING AGENT")
     if background_thread and background_thread.is_alive():
         return jsonify({"status": "Agent is already running"}), 400
 
@@ -429,16 +430,17 @@ def start_agent():
     agent_status["state"] = "idle"
     agent_status["progress"] = "Not started"
     agent_status["final_response"] = None
+    
 
     # Get the market header (headline) from the request
     data = request.get_json()
+    print(f'data {data}')
     market_header = data.get('market_header', '')
-    print("Market Header" + str(market_header))
     if not market_header:
         return jsonify({"error": "market_header is required"}), 400
 
     # Start the background thread to run the agent for the headline
-    background_thread = threading.Thread(target=run_agent_market_analysis, args=(market_header,))
+    background_thread = threading.Thread(target=run_agent_market_analysis, args=(market_header))
     background_thread.daemon = True
     background_thread.start()
 

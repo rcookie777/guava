@@ -65,17 +65,23 @@ export const YouTubeLiveStream: React.FC = () => {
         const headlines = await getHeadlines();
         if (headlines.length > 0) {
           const latestHeadline = headlines[0]; // Get the latest headline
-          console.log(latestHeadline)
-          console.log('Running agent')
+          console.log(latestHeadline);
+          console.log('Running agent with ' + latestHeadline);
           await runAgent(latestHeadline); // Call the agent with the latest headline
         }
       } catch (error: any) {
         setError(error.message);
       }
     };
-
-    // Fetch headlines and call agent once
+  
+    // Run the function immediately
     fetchHeadlinesAndRunAgent();
+  
+    // Set up an interval to run the function every 20 seconds
+    const intervalId = setInterval(fetchHeadlinesAndRunAgent, 20000);
+  
+    // Clean up function to clear the interval when the component unmounts
+    return () => clearInterval(intervalId);
   }, []);
 
   // When channel changes, start the processing with new channel

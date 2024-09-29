@@ -228,118 +228,118 @@ Only provide a single-line search query based on the user's task description. Do
         return headlines
 
 
-if __name__ == "__main__":
-    load_dotenv()
-    print("Starting Agent")
-    groq_client = Groq(
-        api_key=os.getenv("GROQ_API_KEY"),
-    )
+# if __name__ == "__main__":
+#     load_dotenv()
+#     print("Starting Agent")
+#     groq_client = Groq(
+#         api_key=os.getenv("GROQ_API_KEY"),
+#     )
 
-    # headlines = agent.get_news_headlines()
+#     # headlines = agent.get_news_headlines()
 
-    polymarket_market = {
-        "source": "Polymarket",
-        "market_id": "0x13137815713e2549030a2cd576f14c4e0442a7794782bc0ecd392b2090edfc1c",
-        "status": "Active",
-        "headline": "Will the Democratic candidate win Pennsylvania by 0.5%-1%?",
-        "description": 'This market will resolve to "Yes” if the Democratic Party candidate wins the popular vote in Pennsylvania in the 2024 U.S. Presidential Election by between 0.5% (inclusive) and 1% (exclusive) or more when compared with the second place candidate. Otherwise, this market will resolve to "No".\n\nFor the purpose of resolving this market, the \'margin of victory\' is defined as the absolute difference between the percentages of votes received by the Democratic Party candidate and the second-place candidate. Percentages of the votes received by each party will be determined by dividing the total number of votes each of the top two candidates receives by the sum of all votes cast in Pennsylvania for the 2024 U.S. Presidential Election.\n\nThis market will resolve based off the official vote count once Pennsylvania has certified the vote. \n\nIf a recount is initiated before certification, the market will remain open until the recount is completed and the vote is certified. If a recount occurs after certification, the recount will not be considered.',
-        "end_date": "2024-11-05T12:00:00Z",
-        "yes_ask": 0.065,
-        "no_ask": 0.935,
-        "liquidity": 35388.2459,
-    }
+#     polymarket_market = {
+#         "source": "Polymarket",
+#         "market_id": "0x13137815713e2549030a2cd576f14c4e0442a7794782bc0ecd392b2090edfc1c",
+#         "status": "Active",
+#         "headline": "Will the Democratic candidate win Pennsylvania by 0.5%-1%?",
+#         "description": 'This market will resolve to "Yes” if the Democratic Party candidate wins the popular vote in Pennsylvania in the 2024 U.S. Presidential Election by between 0.5% (inclusive) and 1% (exclusive) or more when compared with the second place candidate. Otherwise, this market will resolve to "No".\n\nFor the purpose of resolving this market, the \'margin of victory\' is defined as the absolute difference between the percentages of votes received by the Democratic Party candidate and the second-place candidate. Percentages of the votes received by each party will be determined by dividing the total number of votes each of the top two candidates receives by the sum of all votes cast in Pennsylvania for the 2024 U.S. Presidential Election.\n\nThis market will resolve based off the official vote count once Pennsylvania has certified the vote. \n\nIf a recount is initiated before certification, the market will remain open until the recount is completed and the vote is certified. If a recount occurs after certification, the recount will not be considered.',
+#         "end_date": "2024-11-05T12:00:00Z",
+#         "yes_ask": 0.065,
+#         "no_ask": 0.935,
+#         "liquidity": 35388.2459,
+#     }
 
-    master = Agent(0,"", [], llm=groq_client,agent_type='master',status='working')
+#     master = Agent(0,"", [], llm=groq_client,agent_type='master',status='working')
     
-    # master.google_search(search)
-    # headlines = [
-    #     {
-    #         "headline": "Tristan Matthews’ late field goal lifts Central Michigan over San Diego State 22-21",
-    #         "url": "https://www.mymotherlode.com/sports/college-sports-general-news/3432631/tristan-matthews-late-field-goal-lifts-central-michigan-over-san-diego-state-22-21.html",
-    #         "published_at": "2024-09-29T00:12:53+00:00",
-    #     },
-    #     {
-    #         "headline": "El Papa Francisco advierte a todos que el fin del mundo se acerca",
-    #         "url": "https://mundonow.com/el-papa-francisco-advierte-que-el-fin-del-mundo-se-acerca/",
-    #         "published_at": "2024-09-29T00:12:41+00:00",
-    #     },
-    #     {
-    #         "headline": "Hajj-Malik Williams guides unbeaten UNLV to 59-14 romp over Fresno State",
-    #         "url": "https://www.mymotherlode.com/sports/college-sports-general-news/3432630/hajj-malik-williams-guides-unbeaten-unlv-to-59-14-romp-over-fresno-state.html",
-    #         "published_at": "2024-09-29T00:12:26+00:00",
-    #     },
-    #     {
-    #         "headline": "Lumsden, Sask. welcomes visitors for annual Scarecrow Festival",
-    #         "url": "https://globalnews.ca/news/10784711/lumsden-sask-welcomes-visitors-scarecrow-festival/",
-    #         "published_at": "2024-09-29T00:12:08+00:00",
-    #     },
-    #     {
-    #         "headline": "Nahost-Liveblog: ++ Iran fordert Sitzung des UN-Sicherheitsrats ++",
-    #         "url": "https://www.tagesschau.de/newsticker/liveblog-nahost-sonntag-190.html",
-    #         "published_at": "2024-09-29T00:12:01+00:00",
-    #     },
-    #     {
-    #         "headline": "Truman's Deployment [Image 10 of 11]",
-    #         "url": "https://www.dvidshub.net/image/8667553/trumans-deployment",
-    #         "published_at": "2024-09-29T00:11:58+00:00",
-    #     },
-    #     {
-    #         "headline": "Truman's Deployment [Image 11 of 11]",
-    #         "url": "https://www.dvidshub.net/image/8667554/trumans-deployment",
-    #         "published_at": "2024-09-29T00:11:58+00:00",
-    #     },
-    #     {
-    #         "headline": "Truman's Deployment [Image 9 of 11]",
-    #         "url": "https://www.dvidshub.net/image/8667546/trumans-deployment",
-    #         "published_at": "2024-09-29T00:11:58+00:00",
-    #     },
-    #     {
-    #         "headline": "Truman's Deployment [Image 8 of 11]",
-    #         "url": "https://www.dvidshub.net/image/8667545/trumans-deployment",
-    #         "published_at": "2024-09-29T00:11:57+00:00",
-    #     },
-    #     {
-    #         "headline": "Truman's Deployment [Image 6 of 11]",
-    #         "url": "https://www.dvidshub.net/image/8667542/trumans-deployment",
-    #         "published_at": "2024-09-29T00:11:57+00:00",
-    #     },
-    # ]
-    master = Agent(0, "", [], llm=groq_client, agent_type='master', status='working')
+#     # master.google_search(search)
+#     # headlines = [
+#     #     {
+#     #         "headline": "Tristan Matthews’ late field goal lifts Central Michigan over San Diego State 22-21",
+#     #         "url": "https://www.mymotherlode.com/sports/college-sports-general-news/3432631/tristan-matthews-late-field-goal-lifts-central-michigan-over-san-diego-state-22-21.html",
+#     #         "published_at": "2024-09-29T00:12:53+00:00",
+#     #     },
+#     #     {
+#     #         "headline": "El Papa Francisco advierte a todos que el fin del mundo se acerca",
+#     #         "url": "https://mundonow.com/el-papa-francisco-advierte-que-el-fin-del-mundo-se-acerca/",
+#     #         "published_at": "2024-09-29T00:12:41+00:00",
+#     #     },
+#     #     {
+#     #         "headline": "Hajj-Malik Williams guides unbeaten UNLV to 59-14 romp over Fresno State",
+#     #         "url": "https://www.mymotherlode.com/sports/college-sports-general-news/3432630/hajj-malik-williams-guides-unbeaten-unlv-to-59-14-romp-over-fresno-state.html",
+#     #         "published_at": "2024-09-29T00:12:26+00:00",
+#     #     },
+#     #     {
+#     #         "headline": "Lumsden, Sask. welcomes visitors for annual Scarecrow Festival",
+#     #         "url": "https://globalnews.ca/news/10784711/lumsden-sask-welcomes-visitors-scarecrow-festival/",
+#     #         "published_at": "2024-09-29T00:12:08+00:00",
+#     #     },
+#     #     {
+#     #         "headline": "Nahost-Liveblog: ++ Iran fordert Sitzung des UN-Sicherheitsrats ++",
+#     #         "url": "https://www.tagesschau.de/newsticker/liveblog-nahost-sonntag-190.html",
+#     #         "published_at": "2024-09-29T00:12:01+00:00",
+#     #     },
+#     #     {
+#     #         "headline": "Truman's Deployment [Image 10 of 11]",
+#     #         "url": "https://www.dvidshub.net/image/8667553/trumans-deployment",
+#     #         "published_at": "2024-09-29T00:11:58+00:00",
+#     #     },
+#     #     {
+#     #         "headline": "Truman's Deployment [Image 11 of 11]",
+#     #         "url": "https://www.dvidshub.net/image/8667554/trumans-deployment",
+#     #         "published_at": "2024-09-29T00:11:58+00:00",
+#     #     },
+#     #     {
+#     #         "headline": "Truman's Deployment [Image 9 of 11]",
+#     #         "url": "https://www.dvidshub.net/image/8667546/trumans-deployment",
+#     #         "published_at": "2024-09-29T00:11:58+00:00",
+#     #     },
+#     #     {
+#     #         "headline": "Truman's Deployment [Image 8 of 11]",
+#     #         "url": "https://www.dvidshub.net/image/8667545/trumans-deployment",
+#     #         "published_at": "2024-09-29T00:11:57+00:00",
+#     #     },
+#     #     {
+#     #         "headline": "Truman's Deployment [Image 6 of 11]",
+#     #         "url": "https://www.dvidshub.net/image/8667542/trumans-deployment",
+#     #         "published_at": "2024-09-29T00:11:57+00:00",
+#     #     },
+#     # ]
+#     master = Agent(0, "", [], llm=groq_client, agent_type='master', status='working')
 
-    # Get the initial response from the master agent
-    master_response = master.use_groq(system_prompt=MASTER_PROMPT, prompt=polymarket_market['headline'])
-    print(master_response)
-    task_details, tools = master.extract_task_and_tools(master_response)
-    sub_agents = {}
+#     # Get the initial response from the master agent
+#     master_response = master.use_groq(system_prompt=MASTER_PROMPT, prompt=polymarket_market['headline'])
+#     print(master_response)
+#     task_details, tools = master.extract_task_and_tools(master_response)
+#     sub_agents = {}
 
-    print("Number of tasks generated:", len(task_details))
+#     print("Number of tasks generated:", len(task_details))
 
-    for i, task in enumerate(task_details):
-        description = task['description']
-        task_tools = task['tools']
-        agent_id = i + 1  
-        agent = Agent(agent_id, description, task_tools, agent_type="sub-agent", llm=groq_client, status='working')
-        sub_agents[agent_id] = agent
+#     for i, task in enumerate(task_details):
+#         description = task['description']
+#         task_tools = task['tools']
+#         agent_id = i + 1  
+#         agent = Agent(agent_id, description, task_tools, agent_type="sub-agent", llm=groq_client, status='working')
+#         sub_agents[agent_id] = agent
 
-    sub_agent_outputs = {}
-    for agent_id, agent in sub_agents.items():
-        print(f"Running Sub-Agent {agent_id}: {agent.task}")
-        output = agent.execute_task()  
-        sub_agent_outputs[agent_id] = output
-        agent.status = 'completed'
-        print(f"Sub-Agent {agent_id} completed with output: {output}")
+#     sub_agent_outputs = {}
+#     for agent_id, agent in sub_agents.items():
+#         print(f"Running Sub-Agent {agent_id}: {agent.task}")
+#         output = agent.execute_task()  
+#         sub_agent_outputs[agent_id] = output
+#         agent.status = 'completed'
+#         print(f"Sub-Agent {agent_id} completed with output: {output}")
 
-    combined_messages = []
-    for agent_id, agent in sub_agents.items():
-        combined_messages.extend(agent.messages)
+#     combined_messages = []
+#     for agent_id, agent in sub_agents.items():
+#         combined_messages.extend(agent.messages)
 
-    master.messages.extend(combined_messages)
+#     master.messages.extend(combined_messages)
 
-    MASTER_ANALYSIS_PROMPT = """
-    Based on the information gathered by your sub-agents, analyze the data and provide a concise prediction report for the given market question.
-    """
+#     MASTER_ANALYSIS_PROMPT = """
+#     Based on the information gathered by your sub-agents, analyze the data and provide a concise prediction report for the given market question.
+#     """
 
-    final_response = master.use_groq(
-        system_prompt=MASTER_ANALYSIS_PROMPT,
-        prompt=""
-    )
+#     final_response = master.use_groq(
+#         system_prompt=MASTER_ANALYSIS_PROMPT,
+#         prompt=""
+#     )
