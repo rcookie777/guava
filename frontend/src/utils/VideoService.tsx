@@ -18,7 +18,6 @@ export const startProcessingWithYouTubeLink = async (youtubeUrl: string) => {
   }
 };
 
-// Service function to get headlines after processing
 export const getHeadlines = async () => {
   try {
     const response = await fetch('http://localhost:8080/get_headlines', {
@@ -34,3 +33,41 @@ export const getHeadlines = async () => {
     throw error;
   }
 };
+
+export const runAgent = async (marketHeader: string) => {
+    try {
+      const response = await fetch('http://localhost:8080/start_agent', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ market_header: marketHeader }),
+      });
+      if (!response.ok) {
+        throw new Error('Failed to start agent');
+      }
+      const data = await response.json();
+      console.log('Agent started:', data);
+      return data;
+    } catch (error) {
+      console.error('Error starting agent:', error);
+      throw error;
+    }
+  };
+  
+  export const getAgentStatus = async () => {
+    try {
+      const response = await fetch('http://localhost:8080/agent_status', {
+        method: 'GET',
+      });
+      if (!response.ok) {
+        throw new Error('Failed to fetch agent status');
+      }
+      const status = await response.json();
+      return status;
+    } catch (error) {
+      console.error('Error fetching agent status:', error);
+      throw error;
+    }
+  };
+  

@@ -30,7 +30,7 @@ const ScrollContainer = styled.div`
 interface HeadlineData {
   symbol: string;
   price: number | null;  // Initialize with null as placeholder
-  change: string | null;  // Initialize with null as placeholder
+  venue: string | null;  // Initialize with null as placeholder
 }
 
 export const DataGrid: React.FC = () => {
@@ -46,7 +46,7 @@ export const DataGrid: React.FC = () => {
       const updatedData = headlines.map((headline: string) => ({
         symbol: headline,
         price: null,  // Initialize with null or 0.00 until price is available
-        change: null  // Initialize with null or "N/A" until change is available
+        venue: null  // Initialize with null or "N/A" until change is available
       }));
       setData((prevData) => [...prevData, ...updatedData]); // Append new headlines to the existing ones
       setLoading(false);
@@ -78,15 +78,15 @@ export const DataGrid: React.FC = () => {
           <tr>
             <TableHeader>Symbol</TableHeader>
             <TableHeader>Price</TableHeader>
-            <TableHeader>Change</TableHeader>
+            <TableHeader>Venue</TableHeader>
           </tr>
         </thead>
         <tbody>
           {data.map((item, index) => (
             <tr key={index}>
               <TableCell>{item.symbol}</TableCell>
-              <TableCell>{item.price !== null ? item.price.toFixed(2) : '0.00'}</TableCell>  {/* Default price as 0.00 */}
-              <TableCell>{item.change !== null ? item.change : 'N/A'}</TableCell>  {/* Default change as 'N/A' */}
+              <TableCell>{item.price !== null ? item.price.toFixed(2) : '0.00'}</TableCell> 
+              <TableCell>{item.venue !== null ? item.venue : 'Polymarket'}</TableCell> 
             </tr>
           ))}
         </tbody>

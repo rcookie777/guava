@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Draggable from 'react-draggable';
 import styled from 'styled-components';
-import { startProcessingWithYouTubeLink, getHeadlines } from '../utils/VideoService'; // Import service functions
+import { startProcessingWithYouTubeLink, getHeadlines, runAgent } from '../utils/VideoService'; // Import service functions
 import { DataGrid } from './DataGrid'; // Import DataGrid to display headlines
 
 const PlayerContainer = styled.div<{ minimized: boolean }>`
@@ -41,7 +41,7 @@ const ChannelSelector = styled.select`
 
 export const YouTubeLiveStream: React.FC = () => {
   const [minimized, setMinimized] = useState(false);
-  const [channelId, setChannelId] = useState('YWqrC6FaURA'); // Default channel ID
+  const [channelId, setChannelId] = useState('8NMCnOONqvw'); // Default channel ID
   const [visible, setVisible] = useState(true);
   const [headlines, setHeadlines] = useState<string[]>([]); // State to hold fetched headlines
   const [loading, setLoading] = useState<boolean>(false);
@@ -59,23 +59,23 @@ export const YouTubeLiveStream: React.FC = () => {
     }
   };
 
-  // Function to fetch headlines in intervals
   useEffect(() => {
-    const fetchHeadlinesPeriodically = async () => {
+    const fetchHeadlinesAndRunAgent = async () => {
       try {
         const headlines = await getHeadlines();
-        console.log(headlines)
-        setHeadlines(headlines);
+        if (headlines.length > 0) {
+          const latestHeadline = headlines[0]; // Get the latest headline
+          console.log(latestHeadline)
+          console.log('Running agent')
+          await runAgent(latestHeadline); // Call the agent with the latest headline
+        }
       } catch (error: any) {
         setError(error.message);
       }
     };
 
-    // Start fetching headlines every 10 seconds
-    const intervalId = setInterval(fetchHeadlinesPeriodically, 5000);
-
-    // Clear interval on unmount
-    return () => clearInterval(intervalId);
+    // Fetch headlines and call agent once
+    fetchHeadlinesAndRunAgent();
   }, []);
 
   // When channel changes, start the processing with new channel
@@ -107,8 +107,8 @@ export const YouTubeLiveStream: React.FC = () => {
             <div>
               {!minimized && (
                 <ChannelSelector onChange={handleChannelChange} value={channelId}>
-                  <option value="UC4R8DWoMoI7CAwX8_LjQHig">YouTube Live</option>
-                  <option value="UCYO_jab_esuFRV4b17AJtAw">NASA Live</option>
+                  <option value="8NMCnOONqvw">ABC News</option>
+                  <option value="8NMCnOONqvw">NBC Live</option>
                   <option value="UCsT0YIqwnpJCM-mx7-gSA4Q">TED Talks</option>
                   {/* Add more channels as needed */}
                 </ChannelSelector>
@@ -134,16 +134,6 @@ export const YouTubeLiveStream: React.FC = () => {
           )}
         </PlayerContainer>
       </Draggable>
-
-      {/* Display headlines fetched from API */}
-      {loading && <div>Loading headlines...</div>}
-      {error && <div>Error: {error}</div>}
-      {headlines.length > 0 && (
-        <div>
-          <h3>Headlines</h3>
-          <DataGrid /> 
-        </div>
-      )}
     </div>
   );
 };

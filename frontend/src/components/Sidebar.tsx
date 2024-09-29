@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import { getAgentStatus } from '../utils/VideoService'; // Import the getAgentStatus function
 
 const SidebarContainer = styled.div`
   width: 200px;
@@ -38,8 +39,6 @@ interface LogItem {
   message: string;
 }
 
-
-
 export const Sidebar: React.FC = () => {
   const [log, setLog] = useState<LogItem[]>([
     { emoji: '🤖', message: 'Initializing AI agent...' },
@@ -47,24 +46,28 @@ export const Sidebar: React.FC = () => {
     { emoji: '🔍', message: 'Searching for relevant information...' }
   ]);
 
-  // Function to add new log entry (can be triggered as needed)
+  // Function to add new log entry
   const addLogEntry = (emoji: string, message: string) => {
     setLog([...log, { emoji, message }]);
   };
 
-  // Simulate a new task being added after 5 seconds
+  // Periodically fetch agent status
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      addLogEntry('🚀', 'Processing new data...');
-    }, 5000);
+    const interval = setInterval(async () => {
+      try {
+        const status = await getAgentStatus(); // Get agent status from server
+        addLogEntry('🔄', status.progress); // Log the progress
+      } catch (error) {
+        console.error('Error fetching agent status:', error);
+      }
+    }, 5000); // Update every 5 seconds
 
-    return () => clearTimeout(timeout);
+    return () => clearInterval(interval);
   }, []);
-
 
   return (
     <SidebarContainer>
-      <LogTitle>AI Agent Tasks</LogTitle>
+      <LogTitle>Task Manager</LogTitle>
       {log.map((item, index) => (
         <MenuItem key={index}>
           <span>{item.emoji}</span>

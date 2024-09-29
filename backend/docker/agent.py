@@ -71,22 +71,26 @@ class Agent:
         self.status = status
         self.messages = []
         
-        # print("RUNNING AGENT TASK: " + str(self.task) + "TOOLS: " + str(self.tools))
     def execute_task(self):
+        global agent_status
         output = ""
-        for tool in self.tools:
-            if tool == "search()":
-                print(f"AGENT {self.id} is performing a search.")
-                search_query = self.generate_search_query(self.task)
-                print(f"AGENT {self.id} is searching for: {search_query}")
-                search_results = self.google_search(search_query)
-                print(f"AGENT {self.id} found {search_results}")
-                output += f"Search Results for '{search_query}':\n{search_results}\n"
-            elif tool == "get_order_data()":
-                output += "Order data retrieved.\n"
-                pass
-        self.messages.append({"role": "agent", "content": output})
-        return output
+        try:
+            agent_status["state"] = "running"
+            for tool in self.tools:
+                if tool == "search()":
+                    agent_status["progress"] = f"Agent {self.id} is searching."
+                    search_query = self.generate_search_query(self.task)
+                    search_results = self.google_search(search_query)
+                    output += f"Search Results for '{search_query}':\n{search_results}\n"
+                elif tool == "get_order_data()":
+                    agent_status["progress"] = f"Agent {self.id} is retrieving order data."
+                    output += "Order data retrieved.\n"
+            self.messages.append({"role": "assistant", "content": output})
+            agent_status["state"] = "completed"
+            agent_status["final_response"] = output
+        except Exception as e:
+            agent_status["state"] = "failed"
+            agent_status["progress"] = f"Error: {str(e)}"
 
     def use_lora(self, prompt):
         # Load the base model and tokenizer for LoRA
@@ -121,7 +125,6 @@ class Agent:
         generated_text = generated_text.replace(prompt, "").strip()
 
 
-
         # Ensure the output starts with "Answer:" as required
         if not generated_text.startswith("Answer:"):
             generated_text = "Answer: " + generated_text
@@ -140,7 +143,6 @@ class Agent:
             func=search.run,
         )
         result = tool.invoke(search_query, k=5)
-        self.messages.append({"role": "tool", "content": f"Search results for '{search_query}': {result}"})
         return result
                            
     def get_status(self):
@@ -305,7 +307,7 @@ if __name__ == "__main__":
     master = Agent(0, "", [], llm=groq_client, agent_type='master', status='working')
 
     # Get the initial response from the master agent
-    master_response = master.use_lora(prompt=polymarket_market['headline'])
+    master_response = master.use_groq(system_prompt=MASTER_PROMPT, prompt=polymarket_market['headline'])
     print(master_response)
     task_details, tools = master.extract_task_and_tools(master_response)
     sub_agents = {}
@@ -341,5 +343,3 @@ if __name__ == "__main__":
         system_prompt=MASTER_ANALYSIS_PROMPT,
         prompt=""
     )
-    print("\nFinal Analysis by Master Agent:")
-    print(final_response)

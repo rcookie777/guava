@@ -13,15 +13,58 @@ import threading
 import time
 from dotenv import load_dotenv
 import openai
+from agent import Agent
+from groq import Groq
 
 
+MASTER_PROMPT= """You are the master agent responsible for researching headlines and market data to inform predictions for platforms like Polymarket. Your goal is to gather relevant information and analyze trends to provide insights for prediction market outcomes.
+  Capabilities:
+  - Spawn 2 sub-agents to assist in research tasks
+  - Use search() tool to find relevant news and information
+  - Use get_order_data() tool to retrieve market order data
+  Task Management:
+  1. Assess the given prediction market question or topic
+  2. Determine two key areas requiring research
+  3. Spawn two sub-agents, assigning one specific research task to each
+  4. Analyze information gathered by sub-agents
+  5. Synthesize findings into a concise prediction report
 
+  Sub-Agent Spawning:
+  You must always spawn exactly 2 sub-agents. Use the following format to define their tasks:
+
+  Respond in JSON with no spacing. Only respond in the valid format below.
+
+  OUTPUT FORMAT:
+  {
+    \"tasks\": [
+      {\"task\": \"Detailed description of the first research task\", 
+      \"tools\": [\"List of tools the first agent can use e.g. search(), get_order_data()\"]},
+      {\"task\": \"Detailed description of the second research task\", 
+      \"tools\": [\"List of tools the second agent can use e.g. search(), get_order_data()\"]}
+    ]
+  }
+
+  EXAMPLE OUTPUT:
+  {
+    \"tasks\": [
+      {\"task\": \"Search for recent political polls and trends in Pennsylvania.\", 
+      \"tools\": [\"search()\"]},
+      {\"task\": \"Retrieve the latest market order data related to the Pennsylvania election.\", 
+      \"tools\": [\"get_order_data()\"]}
+    ]
+  }"
+}
+"""
 
 # ----------------------- Configuration Management -----------------------
+# Initialize agent_status globally
+agent_status = {
+    "state": "idle",
+    "progress": "Not started",
+    "final_response": None
+}
 
 load_dotenv()
-
-
 
 
 # Extract configuration values
@@ -307,6 +350,47 @@ def process_audio_stream(audio_stream_url, video_stream_url, stop_event):
         process.terminate()
         process.wait()
 
+def run_agent_market_analysis(market_header):
+    global agent_status
+
+    groq_client = Groq(
+        api_key=os.getenv("GROQ_API_KEY"),
+    )
+    agent_status["state"] = "running"
+    agent_status["progress"] = "Starting agent"
+
+    try:
+        master = Agent(0, "", [], llm=groq_client, agent_type='master', status='working')
+        
+        # Get initial response from the master agent
+        master_response = master.use_groq(system_prompt=MASTER_PROMPT, prompt=market_header)
+        task_details, tools = master.extract_task_and_tools(master_response)
+        # Spawn sub-agents
+        sub_agents = {}
+        for i, task in enumerate(task_details):
+            description = task['description']
+            task_tools = task['tools']
+            agent_id = i + 1  
+            agent = Agent(agent_id, description, task_tools, agent_type="sub-agent", llm=groq_client, status='working')
+            sub_agents[agent_id] = agent
+
+        for agent_id, agent in sub_agents.items():
+            agent_status["progress"] = f"Running Sub-Agent {agent_id}: {agent.task}"
+            output = agent.execute_task()
+            agent_status["progress"] = f"Sub-Agent {agent_id} completed"
+
+        agent_status["progress"] = "Analyzing final output"
+        MASTER_ANALYSIS_PROMPT = """
+        Based on the information gathered by your sub-agents, analyze the data and provide a concise prediction report for the given market question.
+        """
+        final_response = master.use_groq(system_prompt=MASTER_ANALYSIS_PROMPT, prompt="")
+        agent_status["final_response"] = final_response
+        agent_status["state"] = "completed"
+    except Exception as e:
+        agent_status["state"] = "failed"
+        agent_status["progress"] = f"Error: {str(e)}"
+
+
 # ----------------------- Flask App Initialization -----------------------
 
 from flask import Flask, jsonify, request  # Added request for getting query parameters
@@ -329,6 +413,34 @@ def home():
 def get_headlines():
     with headlines_lock:
         return jsonify(latest_headlines)
+    
+@app.route('/agent_status', methods=['GET'])
+def get_agent_status():
+    return jsonify(agent_status)
+
+@app.route('/start_agent', methods=['POST'])
+def start_agent():
+    global background_thread, stop_event, agent_status
+    
+    if background_thread and background_thread.is_alive():
+        return jsonify({"status": "Agent is already running"}), 400
+
+    # Reset status
+    agent_status["state"] = "idle"
+    agent_status["progress"] = "Not started"
+    agent_status["final_response"] = None
+
+    # Get the market header (headline) from the request
+    data = request.get_json()
+    market_header = data.get('market_header', '')
+    print("Market Header" + str(market_header))
+    if not market_header:
+        return jsonify({"error": "market_header is required"}), 400
+
+    # Start the background thread to run the agent for the headline
+    background_thread = threading.Thread(target=run_agent_market_analysis, args=(market_header,))
+    background_thread.daemon = True
+    background_thread.start()
 
 @app.route('/start', methods=['GET'])
 def start_processing():
